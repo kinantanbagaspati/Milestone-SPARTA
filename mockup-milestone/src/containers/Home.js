@@ -5,7 +5,7 @@ import { Button } from "react-bootstrap";
 
 export default function Home() {
     return (
-        <div className="Home">
+        <div className="Container">
             <h1>Tes</h1>
             <p>Tes lagi</p>
             <div>
