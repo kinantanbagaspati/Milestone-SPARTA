@@ -46,9 +46,9 @@ export default class InfectedProbability extends Component{
                             <input type="radio" id="other" name="gender" value={0} onChange={this.handleInputChange}/>
                             <label for="other">Other</label>
                         </form>
-                        <p>Tinggi</p>
+                        <p>Tinggi (M)</p>
                         <input type="number" name="height" onChange={this.handleInputChange}/>
-                        <p>Berat</p>
+                        <p>Berat (KG)</p>
                         <input type="number" name="weight" onChange={this.handleInputChange}/>
                         <form>
                             <input type="checkbox" id="disease1" name="disease1" onChange={()=>{this.setState({disease1: this.state.disease1+1})}}/>
@@ -67,10 +67,40 @@ export default class InfectedProbability extends Component{
                     <div className="external">
                         <label for="cars">Di provinsi mana anda tinggal?</label>
                         <select id="cars" name="provinsi" onChange={this.handleInputChange}>
-                            <option value={0}>Indonesia (provinsi tidak ada di pilihan)</option>
-                            <option value={1}>DKI Jakarta</option>
-                            <option value={2}>Jawa Barat</option>
-                            <option value={3}>Banten</option>
+                            <option value="1">ACEH</option>
+							<option value="2">SUMATERA UTARA</option>
+							<option value="3">SUMATERA BARAT</option>
+							<option value="4">R I A U</option>
+							<option value="5">J A M B I</option>
+							<option value="6">SUMATERA SELATAN</option>
+							<option value="7">BENGKULU</option>
+							<option value="8">LAMPUNG</option>
+							<option value="9">KEPULAUAN BANGKA BELITUNG</option>
+							<option value="10">KEPULAUAN RIAU</option>
+							<option value="11">DKI JAKARTA</option>
+							<option value="12">JAWA BARAT</option>
+							<option value="13">JAWA TENGAH</option>
+							<option value="14">DI YOGYAKARTA</option>
+							<option value="15">JAWA TIMUR</option>
+							<option value="16">B A N T E N</option>
+							<option value="17">BALI</option>
+							<option value="18">NUSA TENGGARA BARAT</option>
+							<option value="19">NUSA TENGGARA TIMUR</option>
+							<option value="20">KALIMANTAN BARAT</option>
+							<option value="21">KALIMANTAN TENGAH</option>
+							<option value="22">KALIMANTAN SELATAN</option>
+							<option value="23">KALIMANTAN TIMUR</option>
+							<option value="24">SULAWESI UTARA</option>
+							<option value="25">SULAWESI SELATAN</option>
+							<option value="26">SULAWESI TENGGARA</option>
+							<option value="27">GORONTALO</option>
+							<option value="28">SULAWESI BARAT</option>
+							<option value="29">MALUKU</option>
+							<option value="30">MALUKU UTARA</option>
+							<option value="31">PAPUA</option>
+							<option value="32">PAPUA BARAT</option>
+							<option value="33">SULAWESI TENGAH</option>
+							<option value="34">KALIMANTAN UTARA</option>
                         </select>
                         <p>Berapa hari dalam seminggu pekerjaan anda mengharuskan keluar rumah?</p>
                         <input type="number" name="workDay" onChange={this.handleInputChange}/>
