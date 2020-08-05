@@ -98,6 +98,13 @@ export default class Symptoms extends Component{
             <div className="container">
                 <h1>Symptoms</h1>
                 
+				<Link to={{pathname: "/symptoms/skala"}}>
+					<Button>?</Button>
+				</Link>
+				<Link to={{pathname: "/"}}>
+					<Button>Back</Button>
+				</Link>
+				<h2>Diantara 10 gejala di bawah ini, centang hal yang tubuh anda rasakan:</h2>
                 <div className="options">
                     <div className="changeInput" onClick={()=>{this.handleClick(0, false)}}>
                         <div style={{width: 16, height: 4, backgroundColor: "white", borderRadius: 2}}/>
