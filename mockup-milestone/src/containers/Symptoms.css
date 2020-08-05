@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border: black solid;
+    border-radius: 5px;
+}
+.changeInput {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: #47B713;
+    border-radius: 5px;
+}

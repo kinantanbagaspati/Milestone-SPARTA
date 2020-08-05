@@ -1,19 +1,99 @@
-import React from "react";
-import "./Home.css";
+import React, {Component} from "react";
+import "./InfectedProbability.css";
 import { Link } from "react-router-dom";
 import { Button } from "react-bootstrap";
 
-export default function InfectedProbability() {
-    return (
-        <div className="Container">
-            <h1>Infected Probability</h1>
-            <div>
-                <Link to="/infected-probability/result">
-                    <Button block bsSize="large">
-                        Lihat Hasil
-                    </Button>
-                </Link>
+export default class InfectedProbability extends Component{
+    constructor(props) {
+        super(props);
+        this.state = {
+            age: 0,
+            gender: 0,
+            disease1: 0,
+            disease2: 0,
+            disease3: 0,
+            disease4: 0,
+            disease5: 0,
+            provinsi: 0,
+            workDay: 0,
+            workMeet: 0,
+            pubDay: 0,
+            posMeet: 0,
+            userHome: 0,
+            userElse: 0
+        }
+    }
+    handleSubmit = (event) => {
+        event.preventDefault()
+    }
+    handleInputChange = (event) => {
+        event.preventDefault()
+        this.setState({[event.target.name]: event.target.value})
+    }
+    render(){
+        return (
+            <div className="container">
+                <h1>Infected Probability</h1>
+                <div className="factor">
+                    <div className="internal">
+                        <p>Umur</p>
+                        <input type="number" name="age" onChange={this.handleInputChange}/>
+                        <form>    
+                            <input type="radio" id="male" name="gender" value={1} onChange={this.handleInputChange}/>
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="gender" value={2} onChange={this.handleInputChange}/>
+                            <label for="female">Female</label>
+                            <input type="radio" id="other" name="gender" value={0} onChange={this.handleInputChange}/>
+                            <label for="other">Other</label>
+                        </form>
+                        <p>Tinggi</p>
+                        <input type="number" name="height" onChange={this.handleInputChange}/>
+                        <p>Berat</p>
+                        <input type="number" name="weight" onChange={this.handleInputChange}/>
+                        <form>
+                            <input type="checkbox" id="disease1" name="disease1" onChange={()=>{this.setState({disease1: this.state.disease1+1})}}/>
+                            <label for="disease1"> Hipertensi / Darah Tinggi</label>
+                            <input type="checkbox" id="disease2" name="disease2" onChange={()=>{this.setState({disease2: this.state.disease2+1})}}/>
+                            <label for="disease2"> Penyakit Jantung</label>
+                            <input type="checkbox" id="disease3" name="disease3" onChange={()=>{this.setState({disease3: this.state.disease3+1})}}/>
+                            <label for="disease3"> Penyakit Pernapasan</label>
+                            <input type="checkbox" id="disease4" name="disease4" onChange={()=>{this.setState({disease4: this.state.disease4+1})}}/>
+                            <label for="disease4"> Diabetes</label>
+                            <input type="checkbox" id="disease5" name="disease5" onChange={()=>{this.setState({disease5: this.state.disease5+1})}}/>
+                            <label for="disease5"> Kanker</label>
+                        </form>
+
+                    </div>
+                    <div className="external">
+                        <label for="cars">Di provinsi mana anda tinggal?</label>
+                        <select id="cars" name="provinsi" onChange={this.handleInputChange}>
+                            <option value={0}>Indonesia (provinsi tidak ada di pilihan)</option>
+                            <option value={1}>DKI Jakarta</option>
+                            <option value={2}>Jawa Barat</option>
+                            <option value={3}>Banten</option>
+                        </select>
+                        <p>Berapa hari dalam seminggu pekerjaan anda mengharuskan keluar rumah?</p>
+                        <input type="number" name="workDay" onChange={this.handleInputChange}/>
+                        <p>Berapa orang yang ditemui dalam satu hari kerja?</p>
+                        <input type="number" name="workMeet" onChange={this.handleInputChange}/>
+                        <p>Selama 2 minggu sebeum hari ini, berapa kali anda beraktivitas di fasilitas umum?</p>
+                        <input type="number" name="pubDay" onChange={this.handleInputChange}/>
+                        <p>Berapa banyak Anda berinteraksi dengan orang yang ternyata positif Covid-19?</p>
+                        <input type="number" name="posMeet" onChange={this.handleInputChange}/>
+                        <p>Berapa orang yang serumah dengan Anda?</p>
+                        <input type="number" name="userHome" onChange={this.handleInputChange}/>
+                        <p>Selain yang telah ditanyakan, berapa banyak orang yang anda temui per harinya?</p>
+                        <input type="number" name="userElse" onChange={this.handleInputChange}/>
+                    </div>
+                </div>
+                <div>
+                    <Link to={{pathname: "/infected-probability/result", userProb: this.state}}>
+                        <Button block bsSize="large">
+                            Lihat Hasil
+                        </Button>
+                    </Link>
+                </div>
             </div>
-        </div>
-    );
+        );
+    }
 }
