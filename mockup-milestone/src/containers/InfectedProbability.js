@@ -37,7 +37,7 @@ export default class InfectedProbability extends Component{
                 <div className="factor">
                     <div className="internal">
                         <p>Umur</p>
-                        <input type="number" name="age" onChange={this.handleInputChange}/>
+                        <input type="text" name="age" onChange={this.handleInputChange}/>
                         <form>    
                             <input type="radio" id="male" name="gender" value={1} onChange={this.handleInputChange}/>
                             <label for="male">Male</label>
@@ -47,9 +47,9 @@ export default class InfectedProbability extends Component{
                             <label for="other">Other</label>
                         </form>
                         <p>Tinggi (M)</p>
-                        <input type="number" name="height" onChange={this.handleInputChange}/>
+                        <input type="text" name="height" onChange={this.handleInputChange}/>
                         <p>Berat (KG)</p>
-                        <input type="number" name="weight" onChange={this.handleInputChange}/>
+                        <input type="text" name="weight" onChange={this.handleInputChange}/>
                         <form>
                             <input type="checkbox" id="disease1" name="disease1" onChange={()=>{this.setState({disease1: this.state.disease1+1})}}/>
                             <label for="disease1"> Hipertensi / Darah Tinggi</label>
@@ -73,7 +73,6 @@ export default class InfectedProbability extends Component{
 							<option value="4">R I A U</option>
 							<option value="5">J A M B I</option>
 							<option value="6">SUMATERA SELATAN</option>
-							<option value="7">BENGKULU</option>
 							<option value="8">LAMPUNG</option>
 							<option value="9">KEPULAUAN BANGKA BELITUNG</option>
 							<option value="10">KEPULAUAN RIAU</option>
@@ -85,7 +84,6 @@ export default class InfectedProbability extends Component{
 							<option value="16">B A N T E N</option>
 							<option value="17">BALI</option>
 							<option value="18">NUSA TENGGARA BARAT</option>
-							<option value="19">NUSA TENGGARA TIMUR</option>
 							<option value="20">KALIMANTAN BARAT</option>
 							<option value="21">KALIMANTAN TENGAH</option>
 							<option value="22">KALIMANTAN SELATAN</option>
@@ -93,7 +91,6 @@ export default class InfectedProbability extends Component{
 							<option value="24">SULAWESI UTARA</option>
 							<option value="25">SULAWESI SELATAN</option>
 							<option value="26">SULAWESI TENGGARA</option>
-							<option value="27">GORONTALO</option>
 							<option value="28">SULAWESI BARAT</option>
 							<option value="29">MALUKU</option>
 							<option value="30">MALUKU UTARA</option>
