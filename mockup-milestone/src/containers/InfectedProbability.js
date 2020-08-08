@@ -7,13 +7,11 @@ export default class InfectedProbability extends Component{
     constructor(props) {
         super(props);
         this.state = {
-            age: 0,
+            age: 30,
             gender: 0,
-            disease1: 0,
-            disease2: 0,
-            disease3: 0,
-            disease4: 0,
-            disease5: 0,
+            weight: 60,
+            height: 160,
+            disease: 0,
             provinsi: 0,
             workDay: 0,
             workMeet: 0,
@@ -46,21 +44,23 @@ export default class InfectedProbability extends Component{
                             <input type="radio" id="other" name="gender" value={0} onChange={this.handleInputChange}/>
                             <label for="other">Other</label>
                         </form>
-                        <p>Tinggi (M)</p>
+                        <p>Tinggi (cm)</p>
                         <input type="text" name="height" onChange={this.handleInputChange}/>
-                        <p>Berat (KG)</p>
+                        <p>Berat (kg)</p>
                         <input type="text" name="weight" onChange={this.handleInputChange}/>
                         <form>
-                            <input type="checkbox" id="disease1" name="disease1" onChange={()=>{this.setState({disease1: this.state.disease1+1})}}/>
+                            <input type="radio" id="disease1" name="disease" value={1} onChange={this.handleInputChange}/>
                             <label for="disease1"> Hipertensi / Darah Tinggi</label>
-                            <input type="checkbox" id="disease2" name="disease2" onChange={()=>{this.setState({disease2: this.state.disease2+1})}}/>
+                            <input type="radio" id="disease2" name="disease" value={2} onChange={this.handleInputChange}/>
                             <label for="disease2"> Penyakit Jantung</label>
-                            <input type="checkbox" id="disease3" name="disease3" onChange={()=>{this.setState({disease3: this.state.disease3+1})}}/>
+                            <input type="radio" id="disease3" name="disease" value={3} onChange={this.handleInputChange}/>
                             <label for="disease3"> Penyakit Pernapasan</label>
-                            <input type="checkbox" id="disease4" name="disease4" onChange={()=>{this.setState({disease4: this.state.disease4+1})}}/>
+                            <input type="radio" id="disease4" name="disease" value={4} onChange={this.handleInputChange}/>
                             <label for="disease4"> Diabetes</label>
-                            <input type="checkbox" id="disease5" name="disease5" onChange={()=>{this.setState({disease5: this.state.disease5+1})}}/>
+                            <input type="radio" id="disease5" name="disease" value={5} onChange={this.handleInputChange}/>
                             <label for="disease5"> Kanker</label>
+                            <input type="radio" id="disease0" name="disease" value={0} onChange={this.handleInputChange}/>
+                            <label for="disease0"> Tidak ada </label>
                         </form>
 
                     </div>
