@@ -95,16 +95,17 @@ export default class Symptoms extends Component{
     }
     render(){
         return (
+		
             <div className="container">
+				<span>
+					<Link to={{pathname: "/"}}>
+						<Button>Back</Button>
+					</Link>
+				</span>
                 <h1>Symptoms</h1>
-                
-				<Link to={{pathname: "/symptoms/skala"}}>
-					<Button>?</Button>
-				</Link>
-				<Link to={{pathname: "/"}}>
-					<Button>Back</Button>
-				</Link>
+				
 				<h2>Diantara 10 gejala di bawah ini, centang hal yang tubuh anda rasakan:</h2>
+
                 <div className="options">
                     <div className="changeInput" onClick={()=>{this.handleClick(0, false)}}>
                         <div style={{width: 16, height: 4, backgroundColor: "white", borderRadius: 2}}/>
@@ -240,6 +241,33 @@ export default class Symptoms extends Component{
                         Lihat Hasil
                     </Button>
                 </Link>
+				<div id="skalaButton">
+					<a href="#skala">
+						<button onClick={()=>{this.setState({show:!this.state.show})}}>{ this.state.show? 'Sembunyikan' : 'Lihat'} Keterangan Skala Gejala</button>	
+					</a>
+					{
+						this.state.show? 
+						<div id="skala">
+							<p>Skala Gejala. Keterangan</p>
+							<ol start="0">
+								<li>Organ terkait gejala tersebut berfungsi normal sepenuhnya</li>
+								<br/>
+								<li>Terasa gangguan terhadap organ terkait gejala dalam
+								melakukan fungsi seharusnya</li>
+								<br/>
+								<li>Terasa sejumlah gangguan pada organ terkait dan mulai
+								membentuk tanda-tanda yang cocok dengan gejala tersebut</li>
+								<br/>
+								<li>Gejala sudah dapat dipastikan timbul dan mengganggu
+								aktivitas sehari-hari bahkan terasa sakit atau ketidaknyamanan</li>
+								<br/>
+								<li>Sakit yang ditimbulkan dari suatu gejala menyebabkan sejumlah
+								aktivitas manusia normal sudah tidak dapat dikerjakan seperti
+								biasa</li>
+							</ol>
+						</div> : null
+					}
+				</div>
             </div>
         );
     }
