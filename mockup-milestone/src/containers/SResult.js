@@ -33,7 +33,7 @@ export default function SResult(){
     let weight = [];
     return (
         <div class = "centerize">
-            <div className="hero-image4">
+            <div className="hero-image5">
                 <div className="heading">
                     <h1>Hasil Kecocokan Anda dengan Gejala</h1>
                 </div>

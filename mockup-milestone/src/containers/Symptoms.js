@@ -97,17 +97,15 @@ export default class Symptoms extends Component{
         return (
 		
             <div className="container">
-				<div className="header">
-                	<h1>Symptoms</h1>	
-				</div>
-				<div>
-					<div className="hero-image3">
-						<div className="heading">
-							<h2>Diantara 10 gejala di bawah ini, pilih skala dari 0-4 dari hal yang tubuh anda rasakan:</h2>
-						</div>
-					<div id="skala">
-						<div className="heading">
-								<p>Skala Gejala. Keterangan</p>
+				<div className="hero-image4">
+					<div className="headerSym">
+						<h1>Symptoms</h1>
+					</div>
+					
+					<div>
+						<h2>Diantara 10 gejala di bawah ini, pilih skala dari 0-4 sesuai gejala yang Anda rasakan</h2>
+						<div className="skala">
+							<p>&ensp; &ensp;Skala Gejala. Keterangan</p>
 							<ol start="1">
 								<li>Organ terkait gejala tersebut berfungsi normal sepenuhnya</li>
 								<br/>
@@ -125,180 +123,161 @@ export default class Symptoms extends Component{
 								biasa</li>
 							</ol>
 						</div>
-					</div>				
-					<div className="options">
-						<div className="heading">
-							<p>Demam &ensp;</p>
-						</div>
-						<div className="changeInput" onClick={()=>{this.handleClick(0, false)}}>
-							<div style={{width: 16, height: 4, backgroundColor: "white", borderRadius: 2}}/>
-						</div>
-						<div className="input">
-							{this.state.fever}
-						</div>
-						<div className="changeInput" onClick={()=>{this.handleClick(0, true)}}>
-							<div style={{width: 4, height: 8, backgroundColor: "white", borderRadius: 2, marginBottom: -2}}/>
-							<div style={{width: 16, height: 4, backgroundColor: "white", borderRadius: 2}}/>
-							<div style={{width: 4, height: 8, backgroundColor: "white", borderRadius: 2, marginTop: -2}}/>
-						</div>
-					</div>
-					<div className="options">
-						<div className="heading">
-							<p>Lemas/Kelelahan &ensp;</p>
-						</div>
-						<div className="changeInput" onClick={()=>{this.handleClick(1, false)}}>
-							<div style={{width: 16, height: 4, backgroundColor: "white", borderRadius: 2}}/>
-						</div>
-						<div className="input">
-							{this.state.fatigue}
-						</div>
-						<div className="changeInput" onClick={()=>{this.handleClick(1, true)}}>
-							<div style={{width: 4, height: 8, backgroundColor: "white", borderRadius: 2, marginBottom: -2}}/>
-							<div style={{width: 16, height: 4, backgroundColor: "white", borderRadius: 2}}/>
-							<div style={{width: 4, height: 8, backgroundColor: "white", borderRadius: 2, marginTop: -2}}/>
-						</div>
-					</div>
-					<div className="options">
-						<div className="heading">
-							<p>Batuk kering/sakit tenggorokan &ensp;</p>
-						</div>
-						<div className="changeInput" onClick={()=>{this.handleClick(2, false)}}>
-							<div style={{width: 16, height: 4, backgroundColor: "white", borderRadius: 2}}/>
-						</div>
-						<div className="input">
-							{this.state.cough}
-						</div>
-						<div className="changeInput" onClick={()=>{this.handleClick(2, true)}}>
-							<div style={{width: 4, height: 8, backgroundColor: "white", borderRadius: 2, marginBottom: -2}}/>
-							<div style={{width: 16, height: 4, backgroundColor: "white", borderRadius: 2}}/>
-							<div style={{width: 4, height: 8, backgroundColor: "white", borderRadius: 2, marginTop: -2}}/>
-						</div>
-					</div>
-					<div className="options">
-						<div className="heading">
-							<p>Nafsu makan turun &ensp;</p>
-						</div>
-						<div className="changeInput" onClick={()=>{this.handleClick(3, false)}}>
-							<div style={{width: 16, height: 4, backgroundColor: "white", borderRadius: 2}}/>
-						</div>
-						<div className="input">
-							{this.state.apetite}
-						</div>
-						<div className="changeInput" onClick={()=>{this.handleClick(3, true)}}>
-							<div style={{width: 4, height: 8, backgroundColor: "white", borderRadius: 2, marginBottom: -2}}/>
-							<div style={{width: 16, height: 4, backgroundColor: "white", borderRadius: 2}}/>
-							<div style={{width: 4, height: 8, backgroundColor: "white", borderRadius: 2, marginTop: -2}}/>
-						</div>
-					</div>
-					<div className="options">
-						<div className="heading">
-							<p>Nyeri otot &ensp;</p>
-						</div>
-						<div className="changeInput" onClick={()=>{this.handleClick(4, false)}}>
-							<div style={{width: 16, height: 4, backgroundColor: "white", borderRadius: 2}}/>
-						</div>
-						<div className="input">
-							{this.state.muscleache}
-						</div>
-						<div className="changeInput" onClick={()=>{this.handleClick(4, true)}}>
-							<div style={{width: 4, height: 8, backgroundColor: "white", borderRadius: 2, marginBottom: -2}}/>
-							<div style={{width: 16, height: 4, backgroundColor: "white", borderRadius: 2}}/>
-							<div style={{width: 4, height: 8, backgroundColor: "white", borderRadius: 2, marginTop: -2}}/>
-						</div>
-					</div>
-					<div className="options">
-						<div className="heading">	
-							<p>Napas pendek &ensp;</p>
-						</div>
-						<div className="changeInput" onClick={()=>{this.handleClick(5, false)}}>
-							<div style={{width: 16, height: 4, backgroundColor: "white", borderRadius: 2}}/>
-						</div>
-						<div className="input">
-							{this.state.breath}
-						</div>
-						<div className="changeInput" onClick={()=>{this.handleClick(5, true)}}>
-							<div style={{width: 4, height: 8, backgroundColor: "white", borderRadius: 2, marginBottom: -2}}/>
-							<div style={{width: 16, height: 4, backgroundColor: "white", borderRadius: 2}}/>
-							<div style={{width: 4, height: 8, backgroundColor: "white", borderRadius: 2, marginTop: -2}}/>
-						</div>
-					</div>
-					<div className="options">
-						<div className="heading">
-							<p>Bersin &ensp;</p>
-						</div>
-						<div className="changeInput" onClick={()=>{this.handleClick(6, false)}}>
-							<div style={{width: 16, height: 4, backgroundColor: "white", borderRadius: 2}}/>
-						</div>
-						<div className="input">
-							{this.state.sneeze}
-						</div>
-						<div className="changeInput" onClick={()=>{this.handleClick(6, true)}}>
-							<div style={{width: 4, height: 8, backgroundColor: "white", borderRadius: 2, marginBottom: -2}}/>
-							<div style={{width: 16, height: 4, backgroundColor: "white", borderRadius: 2}}/>
-							<div style={{width: 4, height: 8, backgroundColor: "white", borderRadius: 2, marginTop: -2}}/>
-						</div>
-					</div>
-					<div className="options">
-						<div className="heading">
-							<p>Diare/sakit perut &ensp;</p>
-						</div>
-						<div className="changeInput" onClick={()=>{this.handleClick(7, false)}}>
-							<div style={{width: 16, height: 4, backgroundColor: "white", borderRadius: 2}}/>
-						</div>
-						<div className="input">
-							{this.state.diarrhea}
-						</div>
-						<div className="changeInput" onClick={()=>{this.handleClick(7, true)}}>
-							<div style={{width: 4, height: 8, backgroundColor: "white", borderRadius: 2, marginBottom: -2}}/>
-							<div style={{width: 16, height: 4, backgroundColor: "white", borderRadius: 2}}/>
-							<div style={{width: 4, height: 8, backgroundColor: "white", borderRadius: 2, marginTop: -2}}/>
-						</div>
-					</div>
-					<div className="options">
-						<div className="heading">
-							<p>Mual/muntah &ensp;</p>
-						</div>
-						<div className="changeInput" onClick={()=>{this.handleClick(8, false)}}>
-							<div style={{width: 16, height: 4, backgroundColor: "white", borderRadius: 2}}/>
-						</div>
-						<div className="input">
-							{this.state.nausea}
-						</div>
-						<div className="changeInput" onClick={()=>{this.handleClick(8, true)}}>
-							<div style={{width: 4, height: 8, backgroundColor: "white", borderRadius: 2, marginBottom: -2}}/>
-							<div style={{width: 16, height: 4, backgroundColor: "white", borderRadius: 2}}/>
-							<div style={{width: 4, height: 8, backgroundColor: "white", borderRadius: 2, marginTop: -2}}/>
+						<div className="pilihan">
+							<div className="options">
+								<p>&ensp; Demam &ensp;</p>
+								<div className="changeInput" onClick={()=>{this.handleClick(0, false)}}>
+									<div style={{width: 16, height: 4, backgroundColor: "white", borderRadius: 2}}/>
+								</div>
+								<div className="input">
+									{this.state.fever}
+								</div>
+								<div className="changeInput" onClick={()=>{this.handleClick(0, true)}}>
+									<div style={{width: 4, height: 8, backgroundColor: "white", borderRadius: 2, marginBottom: -2}}/>
+									<div style={{width: 16, height: 4, backgroundColor: "white", borderRadius: 2}}/>
+									<div style={{width: 4, height: 8, backgroundColor: "white", borderRadius: 2, marginTop: -2}}/>
+								</div>
+							</div>
+							<div className="options">
+								<p>&ensp; Lemas/Kelelahan &ensp;</p>
+								<div className="changeInput" onClick={()=>{this.handleClick(1, false)}}>
+									<div style={{width: 16, height: 4, backgroundColor: "white", borderRadius: 2}}/>
+								</div>
+								<div className="input">
+									{this.state.fatigue}
+								</div>
+								<div className="changeInput" onClick={()=>{this.handleClick(1, true)}}>
+									<div style={{width: 4, height: 8, backgroundColor: "white", borderRadius: 2, marginBottom: -2}}/>
+									<div style={{width: 16, height: 4, backgroundColor: "white", borderRadius: 2}}/>
+									<div style={{width: 4, height: 8, backgroundColor: "white", borderRadius: 2, marginTop: -2}}/>
+								</div>
+							</div>
+							<div className="options">
+								<p>&ensp; Batuk kering/sakit tenggorokan &ensp;</p>
+								<div className="changeInput" onClick={()=>{this.handleClick(2, false)}}>
+									<div style={{width: 16, height: 4, backgroundColor: "white", borderRadius: 2}}/>
+								</div>
+								<div className="input">
+									{this.state.cough}
+								</div>
+								<div className="changeInput" onClick={()=>{this.handleClick(2, true)}}>
+									<div style={{width: 4, height: 8, backgroundColor: "white", borderRadius: 2, marginBottom: -2}}/>
+									<div style={{width: 16, height: 4, backgroundColor: "white", borderRadius: 2}}/>
+									<div style={{width: 4, height: 8, backgroundColor: "white", borderRadius: 2, marginTop: -2}}/>
+								</div>
+							</div>
+							<div className="options">
+								<p>&ensp; Nafsu makan turun &ensp;</p>
+								<div className="changeInput" onClick={()=>{this.handleClick(3, false)}}>
+									<div style={{width: 16, height: 4, backgroundColor: "white", borderRadius: 2}}/>
+								</div>
+								<div className="input">
+									{this.state.apetite}
+								</div>
+								<div className="changeInput" onClick={()=>{this.handleClick(3, true)}}>
+									<div style={{width: 4, height: 8, backgroundColor: "white", borderRadius: 2, marginBottom: -2}}/>
+									<div style={{width: 16, height: 4, backgroundColor: "white", borderRadius: 2}}/>
+									<div style={{width: 4, height: 8, backgroundColor: "white", borderRadius: 2, marginTop: -2}}/>
+								</div>
+							</div>
+							<div className="options">
+								<p>&ensp; Nyeri otot &ensp;</p>
+								<div className="changeInput" onClick={()=>{this.handleClick(4, false)}}>
+									<div style={{width: 16, height: 4, backgroundColor: "white", borderRadius: 2}}/>
+								</div>
+								<div className="input">
+									{this.state.muscleache}
+								</div>
+								<div className="changeInput" onClick={()=>{this.handleClick(4, true)}}>
+									<div style={{width: 4, height: 8, backgroundColor: "white", borderRadius: 2, marginBottom: -2}}/>
+									<div style={{width: 16, height: 4, backgroundColor: "white", borderRadius: 2}}/>
+									<div style={{width: 4, height: 8, backgroundColor: "white", borderRadius: 2, marginTop: -2}}/>
+								</div>
+							</div>
+							<div className="options">
+								<p>&ensp; Napas pendek &ensp;</p>
+								<div className="changeInput" onClick={()=>{this.handleClick(5, false)}}>
+									<div style={{width: 16, height: 4, backgroundColor: "white", borderRadius: 2}}/>
+								</div>
+								<div className="input">
+									{this.state.breath}
+								</div>
+								<div className="changeInput" onClick={()=>{this.handleClick(5, true)}}>
+									<div style={{width: 4, height: 8, backgroundColor: "white", borderRadius: 2, marginBottom: -2}}/>
+									<div style={{width: 16, height: 4, backgroundColor: "white", borderRadius: 2}}/>
+									<div style={{width: 4, height: 8, backgroundColor: "white", borderRadius: 2, marginTop: -2}}/>
+								</div>
+							</div>
+							<div className="options">
+								<p>&ensp; Bersin &ensp;</p>
+								<div className="changeInput" onClick={()=>{this.handleClick(6, false)}}>
+									<div style={{width: 16, height: 4, backgroundColor: "white", borderRadius: 2}}/>
+								</div>
+								<div className="input">
+									{this.state.sneeze}
+								</div>
+								<div className="changeInput" onClick={()=>{this.handleClick(6, true)}}>
+									<div style={{width: 4, height: 8, backgroundColor: "white", borderRadius: 2, marginBottom: -2}}/>
+									<div style={{width: 16, height: 4, backgroundColor: "white", borderRadius: 2}}/>
+									<div style={{width: 4, height: 8, backgroundColor: "white", borderRadius: 2, marginTop: -2}}/>
+								</div>
+							</div>
+							<div className="options">
+								<p>&ensp; Diare/sakit perut &ensp;</p>
+								<div className="changeInput" onClick={()=>{this.handleClick(7, false)}}>
+									<div style={{width: 16, height: 4, backgroundColor: "white", borderRadius: 2}}/>
+								</div>
+								<div className="input">
+									{this.state.diarrhea}
+								</div>
+								<div className="changeInput" onClick={()=>{this.handleClick(7, true)}}>
+									<div style={{width: 4, height: 8, backgroundColor: "white", borderRadius: 2, marginBottom: -2}}/>
+									<div style={{width: 16, height: 4, backgroundColor: "white", borderRadius: 2}}/>
+									<div style={{width: 4, height: 8, backgroundColor: "white", borderRadius: 2, marginTop: -2}}/>
+								</div>
+							</div>
+							<div className="options">
+								<p>&ensp; Mual/muntah &ensp;</p>
+								<div className="changeInput" onClick={()=>{this.handleClick(8, false)}}>
+									<div style={{width: 16, height: 4, backgroundColor: "white", borderRadius: 2}}/>
+								</div>
+								<div className="input">
+									{this.state.nausea}
+								</div>
+								<div className="changeInput" onClick={()=>{this.handleClick(8, true)}}>
+									<div style={{width: 4, height: 8, backgroundColor: "white", borderRadius: 2, marginBottom: -2}}/>
+									<div style={{width: 16, height: 4, backgroundColor: "white", borderRadius: 2}}/>
+									<div style={{width: 4, height: 8, backgroundColor: "white", borderRadius: 2, marginTop: -2}}/>
+								</div>
+							</div>
+							<div className="options">
+								<p>&ensp; Pusing atau sakit kepala &ensp;</p>
+								<div className="changeInput" onClick={()=>{this.handleClick(9, false)}}>
+									<div style={{width: 16, height: 4, backgroundColor: "white", borderRadius: 2}}/>
+								</div>
+								<div className="input">
+									{this.state.headache}
+								</div>
+								<div className="changeInput" onClick={()=>{this.handleClick(9, true)}}>
+									<div style={{width: 4, height: 8, backgroundColor: "white", borderRadius: 2, marginBottom: -2}}/>
+									<div style={{width: 16, height: 4, backgroundColor: "white", borderRadius: 2}}/>
+									<div style={{width: 4, height: 8, backgroundColor: "white", borderRadius: 2, marginTop: -2}}/>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div className="options">
-						<div className="heading">
-							<p>Pusing atau sakit kepala &ensp;</p>
-						</div>
-						<div className="changeInput" onClick={()=>{this.handleClick(9, false)}}>
-							<div style={{width: 16, height: 4, backgroundColor: "white", borderRadius: 2}}/>
-						</div>
-						<div className="input">
-							{this.state.headache}
-						</div>
-						<div className="changeInput" onClick={()=>{this.handleClick(9, true)}}>
-							<div style={{width: 4, height: 8, backgroundColor: "white", borderRadius: 2, marginBottom: -2}}/>
-							<div style={{width: 16, height: 4, backgroundColor: "white", borderRadius: 2}}/>
-							<div style={{width: 4, height: 8, backgroundColor: "white", borderRadius: 2, marginTop: -2}}/>
-						</div>
-					</div>
-				
-                <Link to={{pathname: "/symptoms/result", userSymp: this.state}}>
-                    <Button block bsSize="large">
-                        Lihat Hasil
-                    </Button>
-                </Link>
-				<span>
-					<Link to={{pathname: "/"}}>
-						<Button>Back</Button>
+					<Link to={{pathname: "/symptoms/result", userSymp: this.state}}>
+						<Button className="buttonHasil" block bsSize="small">
+							<p className="tulisanTombol">Hasil ></p>
+						</Button>
 					</Link>
-				</span>
+					<Link to={{pathname: "/", userSymp: this.state}}>
+						<Button className="buttonHasil" block bsSize="small">
+							<p className="tulisanTombol">Kembali ke Home</p>
+						</Button>
+					</Link>
 				</div>
-				</div>
+
             </div>
         );
     }

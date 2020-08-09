@@ -22,9 +22,10 @@
 	font-style: normal;
 	align-items: center;
 	font-weight: normal;
-	font-size: 40px;
+	font-size: 45px;
 	line-height: 56px;
 	background: #47B713;
+	color: white;
 }
 
 .kotakputihhome {
@@ -141,11 +142,29 @@
 	text-align: center;
 	height: 100%;
 	background-image: url("Background.jpg");
-	height: 600px; 
+	height: 900px; 
+	width: 1380px;
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+	margin-top:0px;
+	padding-top:0px;
+}
+
+.hero-image5 {
+	align-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	height: 100%;
+	background-image: url("Background.jpg");
+	height: 500px; 
 	width: 1380px;
 	background-position: center; /* Center the image */
 	background-repeat: no-repeat; /* Do not repeat the image */
 	background-size: cover; /* Resize the background image to cover the entire container */
 	margin-top:0px;
 	padding-top:300px;
+	padding-bottom:00px;
 }
