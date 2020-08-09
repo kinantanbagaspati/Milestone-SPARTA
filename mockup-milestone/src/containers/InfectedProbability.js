@@ -21,6 +21,7 @@ export default class InfectedProbability extends Component{
             userElse: 0
         }
     }
+
     handleSubmit = (event) => {
         event.preventDefault()
     }
@@ -31,7 +32,10 @@ export default class InfectedProbability extends Component{
     render(){
         return (
             <div className="container">
-                <h1>Infected Probability</h1>
+                <div className="hero-image1">
+                    <div className="header">
+                        <h1>Infected Probability</h1>
+                    </div>
                 <div className="factor">
                     <div className="internal">
                         <p>Umur</p>
@@ -64,6 +68,7 @@ export default class InfectedProbability extends Component{
                         </form>
                     </div>
                     <div className="external">
+                        <p></p>
                         <label for="cars">Di provinsi mana anda tinggal?</label>
                         <select id="cars" name="provinsi" onChange={this.handleInputChange}>
                             <option value="0">INDONESIA (bila provinsi pilihan tidak ada)</option>
@@ -111,15 +116,18 @@ export default class InfectedProbability extends Component{
                         <input type="number" name="userHome" onChange={this.handleInputChange}/>
                         <p>Selain yang telah ditanyakan, berapa banyak orang yang anda temui per harinya?</p>
                         <input type="number" name="userElse" onChange={this.handleInputChange}/>
+                        <p></p>
                     </div>
                     
                 </div>
+                <p></p>
                 <div>
                     <Link to={{pathname: "/infected-probability/result", userProb: this.state}}>
-                        <Button block bsSize="large">
+                        <Button block bsSize="lg">
                             Lihat Hasil
                         </Button>
                     </Link>
+                </div>
                 </div>
             </div>
             

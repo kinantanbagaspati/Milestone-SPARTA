@@ -33,8 +33,11 @@ export default function SResult(){
     let weight = [];
     return (
         <div class = "centerize">
-            <h1>Hasil Kecocokan Anda dengan Gejala</h1>
-            <div>
+            <div className="hero-image4">
+                <div className="heading">
+                    <h1>Hasil Kecocokan Anda dengan Gejala</h1>
+                </div>
+            <div className="heading">
                 Tingkat kecocokan terhadap orang yang sudah 1 hari terinfeksi: {ProbDay[0]} %
 				<br/>
                 Tingkat kecocokan terhadap orang yang sudah 5 hari terinfeksi: {ProbDay[1]} %
@@ -46,12 +49,14 @@ export default function SResult(){
                 Tingkat kecocokan terhadap orang yang sudah 10 hari terinfeksi: {ProbDay[4]} %
 				<br/>
             </div>
+            <p></p>
             <div>
                 <Link to="/">
                     <button class = "button">
                         Kembali ke home
                     </button>
                 </Link>
+            </div>
             </div>
         </div>
     );

@@ -41,6 +41,7 @@
 }
 
 #skala {
+    margin-left: 2px;
     width: 500px;
     height: 350px;
     padding-top: 10px;
@@ -49,5 +50,11 @@
     list-style-position: inside;
 	float:right;
 
+}
+
+.heading{
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
 

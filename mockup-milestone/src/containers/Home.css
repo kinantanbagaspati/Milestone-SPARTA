@@ -81,9 +81,71 @@
 	text-align: center;
 	height: 100%;
 	background-image: url("Background.jpg");
-	height: 600px; 
+	height: 650px; 
 	width: 1380px;
 	background-position: center; /* Center the image */
 	background-repeat: no-repeat; /* Do not repeat the image */
 	background-size: cover; /* Resize the background image to cover the entire container */
   }
+
+  .hero-image1 {
+	align-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	height: 100%;
+	background-image: url("Background.jpg");
+	height: 1000px; 
+	width: 1380px;
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+  }
+
+  .hero-image2 {
+	align-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	height: 100%;
+	background-image: url("Background.jpg");
+	height: 650px; 
+	width: 1380px;
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+  }
+
+  .hero-image3 {
+	align-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	height: 100%;
+	background-image: url("Background.jpg");
+	height: 1200px; 
+	width: 1380px;
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+  }
+
+  .hero-image4 {
+	align-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	height: 100%;
+	background-image: url("Background.jpg");
+	height: 600px; 
+	width: 1380px;
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+	margin-top:0px;
+	padding-top:300px;
+}

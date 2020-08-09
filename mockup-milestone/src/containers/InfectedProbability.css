@@ -2,33 +2,44 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: white;
+    color: black;
+}
+.judul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
 }
 .factor {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     width: 1000px;
-    height: 700px;
+    height: 750px;
     padding-top: 20px;
     border: black solid;
+    background-color: white;
 }
 .internal {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     width: 350px;
-    height: 660px;
+    height: 700px;
     border: black solid;
     padding-right: 50px;
     padding-left: 50px;
+    background-color: white;
 }
 .external {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     width: 350px;
-    height: 660px;
+    height: 700px;
     border: black solid;
     padding-right: 50px;
     padding-left: 50px;
+    background-color: white;
 }

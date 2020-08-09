@@ -12,7 +12,7 @@ export default class Home extends Component{
             <div className="Container">
                 <div className="hero-image">
                     <div className="header">
-                        <h1 className="headerhome">Selamat datang di Website Pemantau Kemungkinan Terinfeksi COVID-19</h1>
+                        <h1>Selamat datang di Website Pemantau Kemungkinan Terinfeksi COVID-19</h1>
                     </div>
                     <div className="kotakputihhome">
                         <p className="pertanyaanhome">Apa yang ingin anda ketahui hari ini?</p>
