@@ -10,21 +10,27 @@ export default class Home extends Component{
     render(){
         return (
             <div className="Container">
-                <h1>Tes</h1>
-                <p>Tes lagi</p>
-                <div>
-                    <Link to="/infected-probability">
-                        <Button block bsSize="large">
-                            Kemungkinan Terinfeksi COVID-19
-                        </Button>
-                    </Link>
+                <div className="header">
+                    <h1 className="headerhome">Selamat datang di Website Pemantau Kemungkinan Terinfeksi COVID-19</h1>
                 </div>
-                <div>
-                    <Link to="/symptoms">
-                        <Button block bsSize="large">
-                            Tingkat Kecocokan dengan Gejala COVID-19
-                        </Button>
-                    </Link>
+                <div className="kotakputihhome">
+                    <p className="pertanyaanhome">Apa yang ingin anda ketahui hari ini?</p>
+                    <div className="kumpulantombolhome">
+                        <div>
+                            <Link to="/infected-probability">
+                                <Button block bsSize="large">
+                                    Kemungkinan Terinfeksi COVID-19
+                                </Button>
+                            </Link>
+                        </div>
+                        <div>
+                            <Link to="/symptoms">
+                                <Button block bsSize="large">
+                                    Tingkat Kecocokan dengan Gejala COVID-19
+                                </Button>
+                            </Link>
+                        </div>
+                    </div>
                 </div>
             </div>
         );
