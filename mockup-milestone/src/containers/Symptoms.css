@@ -91,3 +91,14 @@
 	margin:auto;
 }
 
+.keterangan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+    width: 490px;
+    height: 50px;
+    text-align: left;
+    background-color: #47B713;
+    font-size: 25px;
+}

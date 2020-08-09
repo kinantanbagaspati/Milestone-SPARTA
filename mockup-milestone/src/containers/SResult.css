@@ -1,3 +1,9 @@
+.Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
 .centerize {
     position: absolute;
     top: 50%;
