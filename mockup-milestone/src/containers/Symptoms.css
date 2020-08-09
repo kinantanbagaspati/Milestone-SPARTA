@@ -1,12 +1,51 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+ 	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	height: 100%;
+    background: #E5E5E5;
 }
+
+.headerSym{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100px;
+	width: 100%;
+	background: #47B713;
+	font-family: Roboto, Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 56px;	
+}
+
+.skala {
+    width: 500px;
+    height: 400px;
+    padding-top: 10px;
+    border: black solid;
+	text-align: left;
+    list-style-position: inside;
+	float:right;
+	background: #FFFFFF;
+	border-radius: 50px;
+}
+
+.pilihan{
+	width: 420px;
+    height: 550px;
+	background: #FFFFFF;
+	border: black solid;
+	border-radius: 50px;
+}
+
+
 .options {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: center;	
 }
 
 .input {
@@ -17,8 +56,9 @@
     width: 20px;
     height: 20px;
     border: black solid;
-    border-radius: 5px;
+    border-radius: 5px;	
 }
+
 .changeInput {
     display: flex;
     flex-direction: column;
@@ -28,18 +68,26 @@
     height: 30px;
     background-color: #47B713;
     border-radius: 5px;
-
-	
 }
 
-#skala {
-    width: 500px;
-    height: 350px;
-    padding-top: 10px;
-    border: black solid;
-	text-align: left;
-    list-style-position: inside;
-	float:right;
+.buttonHasil{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 150px;
+	height: 50px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	background-color: #47B713;
+	border-radius: 20px;
+}
 
+.buttonHasil:hover{
+	background-color:#006400;
+}
+.tulisanTombol{
+	color:white;
+	font-size: 20px;
+	text-align:center;
+	margin:auto;
 }
 
