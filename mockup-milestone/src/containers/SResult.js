@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import "./SResult.css";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "react-bootstrap";
-import data from "../data.json";
+import data from "../data.json"
 
 export default function SResult(){
     const location = useLocation();
@@ -29,8 +29,9 @@ export default function SResult(){
         ProbDay[i] = Math.round(ProbDay[i]/data.symptom.weight[10]*100);
     }
 
+    let weight = [];
     return (
-        <div className="Container">
+        <div class = "centerize">
             <h1>Hasil Kecocokan Anda dengan Gejala</h1>
             <div>
                 Tingkat kecocokan terhadap orang yang sudah 1 hari terinfeksi: {ProbDay[0]} %
@@ -46,9 +47,9 @@ export default function SResult(){
             </div>
             <div>
                 <Link to="/">
-                    <Button block bsSize="large">
+                    <button class = "button">
                         Kembali ke home
-                    </Button>
+                    </button>
                 </Link>
             </div>
         </div>
