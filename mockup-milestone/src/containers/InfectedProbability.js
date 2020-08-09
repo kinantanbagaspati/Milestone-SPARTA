@@ -123,8 +123,8 @@ export default class InfectedProbability extends Component{
                 <p></p>
                 <div>
                     <Link to={{pathname: "/infected-probability/result", userProb: this.state}}>
-                        <Button block bsSize="lg">
-                            Lihat Hasil
+                        <Button className="resultButton" block bsSize="lg">
+                            <p className="tulisanTombol">Lihat Hasil</p>
                         </Button>
                     </Link>
                 </div>

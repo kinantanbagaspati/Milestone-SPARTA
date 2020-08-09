@@ -46,17 +46,17 @@ export default function IPResult(){
                 <h1>Hasil Probabilitas Anda Terinfeksi</h1>
                 </div>
                 <div className="kotakputihhome">
-                    <p>Probabilitas anda terinfeksi COVID: {userProb}</p>
+                    <p>Probabilitas anda terinfeksi COVID: {Math.round(userProb*100)}%</p>
                     <p>Keterangan:</p>
                     <p>Infectious Rate: {data.infRate}</p>
                     <p>Faktor pengali internal: {userInfRate/data.infRate}</p>
-                    <p>Probabilitas 1 orang acak di provinsi anda terinfeksi: {probProv}</p>
-                    <p>Prediksi banyaknya pengidap COVID yang anda temui per hari: {Math.pow(exValueMeetPerDay*predMeetPerDay, 0.5)}</p>
+                    <p>Probabilitas 1 orang acak di provinsi anda terinfeksi: {Math.round(probProv*100)}%</p>
+                    <p>Prediksi banyaknya pengidap COVID yang anda temui per hari: {Math.round(Math.pow(exValueMeetPerDay*predMeetPerDay, 0.5))} pengidap</p>
                 </div>
                 <div>
                     <Link to="/">
-                        <Button block bsSize="large">
-                            Kembali ke home
+                        <Button className="homeButton" block bsSize="large">
+                            <p className="tulisanTombol"> Kembali ke home</p>
                         </Button>
                     </Link>
                 </div>

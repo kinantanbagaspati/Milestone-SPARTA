@@ -43,3 +43,25 @@
     padding-left: 50px;
     background-color: white;
 }
+
+.resultButton{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   width: 150px;
+   height: 50px;
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+   background-color: #47B713;
+   border-radius: 20px;
+}
+
+.resultButton:hover{
+   background-color:#006400;
+}
+
+.tulisanTombol{
+   color:white;
+   font-size: 20px;
+   text-align:center;
+   margin:auto;
+}
