@@ -101,6 +101,28 @@ export default class Symptoms extends Component{
 					<div className="headerSym">
 						<h1>Symptoms</h1>
 					</div>
+					<div>
+						<h2>Diantara 10 gejala di bawah ini, pilih skala dari 0-4 sesuai gejala yang Anda rasakan</h2>
+						<div className="skala">
+							<p>&ensp; &ensp;Skala Gejala. Keterangan</p>
+							<ol start="1">
+								<li>Organ terkait gejala tersebut berfungsi normal sepenuhnya</li>
+								<br/>
+								<li>Terasa gangguan terhadap organ terkait gejala dalam
+								melakukan fungsi seharusnya</li>
+								<br/>
+								<li>Terasa sejumlah gangguan pada organ terkait dan mulai
+								membentuk tanda-tanda yang cocok dengan gejala tersebut</li>
+								<br/>
+								<li>Gejala sudah dapat dipastikan timbul dan mengganggu
+								aktivitas sehari-hari bahkan terasa sakit atau ketidaknyamanan</li>
+								<br/>
+								<li>Sakit yang ditimbulkan dari suatu gejala menyebabkan sejumlah
+								aktivitas manusia normal sudah tidak dapat dikerjakan seperti
+								biasa</li>
+							</ol>
+						</div>
+
 					<div className="pilihan">
 						<div className="options">
 							<p>&ensp; Demam &ensp;</p>
@@ -275,6 +297,7 @@ export default class Symptoms extends Component{
 					</Link>
 				</div>
             </div>
+		</div>
         );
     }
 }
