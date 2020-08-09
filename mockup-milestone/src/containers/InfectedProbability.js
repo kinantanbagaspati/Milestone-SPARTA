@@ -102,11 +102,11 @@ export default class InfectedProbability extends Component{
                         </select>
                         <p>Berapa hari dalam seminggu pekerjaan anda mengharuskan keluar rumah?</p>
                         <input type="number" name="workDay" onChange={this.handleInputChange}/>
-                        <p>Berapa orang yang ditemui dalam satu hari kerja?</p>
+                        <p>Berapa orang yang ditemui secara fisik dalam satu hari kerja? (apabila anda petugas medis, anda dapat menghitung juga pasien positif COVID di input ini, bukan pada input ke-5)</p>
                         <input type="number" name="workMeet" onChange={this.handleInputChange}/>
                         <p>Selama 2 minggu sebeum hari ini, berapa kali anda beraktivitas di fasilitas umum?</p>
                         <input type="number" name="pubDay" onChange={this.handleInputChange}/>
-                        <p>Berapa banyak Anda berinteraksi dengan orang yang ternyata positif Covid-19?</p>
+                        <p>Berapa banyak Anda berinteraksi dengan orang yang ternyata positif Covid-19 selama 2 minggu terakhir? (serta anda tidak menggunakan proteksi medis yang lengkap)</p>
                         <input type="number" name="posMeet" onChange={this.handleInputChange}/>
                         <p>Berapa orang yang serumah dengan Anda?</p>
                         <input type="number" name="userHome" onChange={this.handleInputChange}/>

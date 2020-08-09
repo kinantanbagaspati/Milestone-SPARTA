@@ -16,6 +16,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .input {
     display: flex;
     flex-direction: column;
@@ -37,12 +38,13 @@
     border-radius: 5px;
 }
 
+
+
 #skala {
     width: 1000px;
-    height: 250px;
+    height: 350px;
     padding-top: 10px;
     border: black solid;
 	text-align: left;
     list-style-position: inside;
-	margin:auto;
 }

@@ -7,8 +7,8 @@
     },
     "external": {
         "provinsi": {
-            "case": [],
-            "population": []
+            "case": [1377],
+            "population": [285.02]
         }
 
     },
