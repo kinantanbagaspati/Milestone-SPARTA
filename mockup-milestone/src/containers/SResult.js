@@ -28,6 +28,7 @@ export default function SResult(){
         }
         ProbDay[i] = Math.round(ProbDay[i]/data.symptom.weight[10]*100);
     }
+    
 
     let weight = [];
     return (
