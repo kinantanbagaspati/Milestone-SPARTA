@@ -2,7 +2,8 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-    text-align: center;
+	text-align: center;
+	height: 1000px;
     background: #E5E5E5;
 }
 
@@ -11,6 +12,7 @@
 	align-items: center;
 	justify-content: center;
 	height: 100px;
+	width: 10000px;
 	background: #47B713;
 }
 
@@ -51,4 +53,15 @@
 	justify-content: space-around;
 	width: 200px;
 	height: 200px;
+}
+.buttonHome{
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	background-color: #47B713;
+	border-radius: 20px;
+}
+.tulisan{
+	color: white;
+}
+.buttonHome:hover{
+	background-color:#006400;
 }

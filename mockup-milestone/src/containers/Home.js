@@ -18,15 +18,15 @@ export default class Home extends Component{
                     <div className="kumpulantombolhome">
                         <div>
                             <Link to="/infected-probability">
-                                <Button block bsSize="large">
-                                    Kemungkinan Terinfeksi COVID-19
+                                <Button className = "buttonHome" block bsSize="large">
+                                    <p className="tulisan">Kemungkinan Terinfeksi COVID-19</p>
                                 </Button>
                             </Link>
                         </div>
                         <div>
                             <Link to="/symptoms">
-                                <Button block bsSize="large">
-                                    Tingkat Kecocokan dengan Gejala COVID-19
+                                <Button className="buttonHome" block bsSize="large">
+                                <p className="tulisan">Tingkat Kecocokan dengan Gejala COVID-19</p>
                                 </Button>
                             </Link>
                         </div>
