@@ -106,7 +106,9 @@ export default class Symptoms extends Component{
 				<div>
 					<h2>Diantara 10 gejala di bawah ini, pilih skala dari 0-4 dari hal yang tubuh anda rasakan:</h2>
 					<div id="skala">
-						<p>Skala Gejala. Keterangan</p>
+						<div className="keterangan">
+						<p style={{color: "white"}}> Keterangan Skala Gejala </p>
+						</div>
 						<ol start="0">
 							<li>Organ terkait gejala tersebut berfungsi normal sepenuhnya</li>
 							<br/>
