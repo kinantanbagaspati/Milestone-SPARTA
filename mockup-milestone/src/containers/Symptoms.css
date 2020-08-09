@@ -47,15 +47,84 @@
    align-items: center;	
 }
 
+.InputChanger1 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-left: 200px;
+}
+.InputChanger2 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-left: 137px;
+}
+
+.InputChanger3 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-left: 35px;
+}
+
+.InputChanger4 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-left: 122px;
+}
+
+.InputChanger5 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-left: 186px;
+}
+
+.InputChanger6 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-left: 156px;
+}
+
+.InputChanger7 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-left: 214px;
+}
+
+.InputChanger8 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-left: 140px;
+}
+
+.InputChanger9 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-left: 163px;
+}
+
+.InputChanger10 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-left: 90px;
+}
+
 .input {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   width: 20px;
-   height: 20px;
-   border: black solid;
-   border-radius: 5px;	
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    border: black solid;
+    border-radius: 5px;	
 }
 
 .changeInput {

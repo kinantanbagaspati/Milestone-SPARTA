@@ -101,31 +101,10 @@ export default class Symptoms extends Component{
 					<div className="headerSym">
 						<h1>Symptoms</h1>
 					</div>
-					
-					<div>
-						<h2>Diantara 10 gejala di bawah ini, pilih skala dari 0-4 sesuai gejala yang Anda rasakan</h2>
-						<div className="skala">
-							<p>&ensp; &ensp;Skala Gejala. Keterangan</p>
-							<ol start="1">
-								<li>Organ terkait gejala tersebut berfungsi normal sepenuhnya</li>
-								<br/>
-								<li>Terasa gangguan terhadap organ terkait gejala dalam
-								melakukan fungsi seharusnya</li>
-								<br/>
-								<li>Terasa sejumlah gangguan pada organ terkait dan mulai
-								membentuk tanda-tanda yang cocok dengan gejala tersebut</li>
-								<br/>
-								<li>Gejala sudah dapat dipastikan timbul dan mengganggu
-								aktivitas sehari-hari bahkan terasa sakit atau ketidaknyamanan</li>
-								<br/>
-								<li>Sakit yang ditimbulkan dari suatu gejala menyebabkan sejumlah
-								aktivitas manusia normal sudah tidak dapat dikerjakan seperti
-								biasa</li>
-							</ol>
-						</div>
-						<div className="pilihan">
-							<div className="options">
-								<p>&ensp; Demam &ensp;</p>
+					<div className="pilihan">
+						<div className="options">
+							<p>&ensp; Demam &ensp;</p>
+							<div className="InputChanger1">
 								<div className="changeInput" onClick={()=>{this.handleClick(0, false)}}>
 									<div style={{width: 16, height: 4, backgroundColor: "white", borderRadius: 2}}/>
 								</div>
@@ -138,8 +117,10 @@ export default class Symptoms extends Component{
 									<div style={{width: 4, height: 8, backgroundColor: "white", borderRadius: 2, marginTop: -2}}/>
 								</div>
 							</div>
-							<div className="options">
-								<p>&ensp; Lemas/Kelelahan &ensp;</p>
+						</div>
+						<div className="options">
+							<p>&ensp; Lemas/Kelelahan &ensp;</p>
+							<div className="InputChanger2">
 								<div className="changeInput" onClick={()=>{this.handleClick(1, false)}}>
 									<div style={{width: 16, height: 4, backgroundColor: "white", borderRadius: 2}}/>
 								</div>
@@ -152,8 +133,10 @@ export default class Symptoms extends Component{
 									<div style={{width: 4, height: 8, backgroundColor: "white", borderRadius: 2, marginTop: -2}}/>
 								</div>
 							</div>
-							<div className="options">
-								<p>&ensp; Batuk kering/sakit tenggorokan &ensp;</p>
+						</div>
+						<div className="options">
+							<p>&ensp; Batuk kering/sakit tenggorokan &ensp;</p>
+							<div className="InputChanger3">
 								<div className="changeInput" onClick={()=>{this.handleClick(2, false)}}>
 									<div style={{width: 16, height: 4, backgroundColor: "white", borderRadius: 2}}/>
 								</div>
@@ -166,8 +149,10 @@ export default class Symptoms extends Component{
 									<div style={{width: 4, height: 8, backgroundColor: "white", borderRadius: 2, marginTop: -2}}/>
 								</div>
 							</div>
-							<div className="options">
-								<p>&ensp; Nafsu makan turun &ensp;</p>
+						</div>
+						<div className="options">
+							<p>&ensp; Nafsu makan turun &ensp;</p>
+							<div className="InputChanger4">
 								<div className="changeInput" onClick={()=>{this.handleClick(3, false)}}>
 									<div style={{width: 16, height: 4, backgroundColor: "white", borderRadius: 2}}/>
 								</div>
@@ -180,8 +165,10 @@ export default class Symptoms extends Component{
 									<div style={{width: 4, height: 8, backgroundColor: "white", borderRadius: 2, marginTop: -2}}/>
 								</div>
 							</div>
-							<div className="options">
-								<p>&ensp; Nyeri otot &ensp;</p>
+						</div>
+						<div className="options">
+							<p>&ensp; Nyeri otot &ensp;</p>
+							<div className="InputChanger5">
 								<div className="changeInput" onClick={()=>{this.handleClick(4, false)}}>
 									<div style={{width: 16, height: 4, backgroundColor: "white", borderRadius: 2}}/>
 								</div>
@@ -194,8 +181,10 @@ export default class Symptoms extends Component{
 									<div style={{width: 4, height: 8, backgroundColor: "white", borderRadius: 2, marginTop: -2}}/>
 								</div>
 							</div>
-							<div className="options">
-								<p>&ensp; Napas pendek &ensp;</p>
+						</div>
+						<div className="options">
+							<p>&ensp; Napas pendek &ensp;</p>
+							<div className="InputChanger6">
 								<div className="changeInput" onClick={()=>{this.handleClick(5, false)}}>
 									<div style={{width: 16, height: 4, backgroundColor: "white", borderRadius: 2}}/>
 								</div>
@@ -208,8 +197,10 @@ export default class Symptoms extends Component{
 									<div style={{width: 4, height: 8, backgroundColor: "white", borderRadius: 2, marginTop: -2}}/>
 								</div>
 							</div>
-							<div className="options">
-								<p>&ensp; Bersin &ensp;</p>
+						</div>
+						<div className="options">
+							<p>&ensp; Bersin &ensp;</p>
+							<div className="InputChanger7">
 								<div className="changeInput" onClick={()=>{this.handleClick(6, false)}}>
 									<div style={{width: 16, height: 4, backgroundColor: "white", borderRadius: 2}}/>
 								</div>
@@ -222,8 +213,10 @@ export default class Symptoms extends Component{
 									<div style={{width: 4, height: 8, backgroundColor: "white", borderRadius: 2, marginTop: -2}}/>
 								</div>
 							</div>
-							<div className="options">
-								<p>&ensp; Diare/sakit perut &ensp;</p>
+						</div>
+						<div className="options">
+							<p>&ensp; Diare/sakit perut &ensp;</p>
+							<div className="InputChanger8">
 								<div className="changeInput" onClick={()=>{this.handleClick(7, false)}}>
 									<div style={{width: 16, height: 4, backgroundColor: "white", borderRadius: 2}}/>
 								</div>
@@ -236,8 +229,10 @@ export default class Symptoms extends Component{
 									<div style={{width: 4, height: 8, backgroundColor: "white", borderRadius: 2, marginTop: -2}}/>
 								</div>
 							</div>
-							<div className="options">
-								<p>&ensp; Mual/muntah &ensp;</p>
+						</div>
+						<div className="options">
+							<p>&ensp; Mual/muntah &ensp;</p>
+							<div className="InputChanger9">
 								<div className="changeInput" onClick={()=>{this.handleClick(8, false)}}>
 									<div style={{width: 16, height: 4, backgroundColor: "white", borderRadius: 2}}/>
 								</div>
@@ -250,8 +245,10 @@ export default class Symptoms extends Component{
 									<div style={{width: 4, height: 8, backgroundColor: "white", borderRadius: 2, marginTop: -2}}/>
 								</div>
 							</div>
-							<div className="options">
-								<p>&ensp; Pusing atau sakit kepala &ensp;</p>
+						</div>
+						<div className="options">
+							<p>&ensp; Pusing atau sakit kepala &ensp;</p>
+							<div className="InputChanger10">
 								<div className="changeInput" onClick={()=>{this.handleClick(9, false)}}>
 									<div style={{width: 16, height: 4, backgroundColor: "white", borderRadius: 2}}/>
 								</div>
@@ -268,7 +265,7 @@ export default class Symptoms extends Component{
 					</div>
 					<Link to={{pathname: "/symptoms/result", userSymp: this.state}}>
 						<Button className="buttonHasil" block bsSize="small">
-							<p className="tulisanTombol">Hasil ></p>
+							<p className="tulisanTombol">Hasil</p>
 						</Button>
 					</Link>
 					<Link to={{pathname: "/", userSymp: this.state}}>
@@ -277,7 +274,6 @@ export default class Symptoms extends Component{
 						</Button>
 					</Link>
 				</div>
-
             </div>
         );
     }
