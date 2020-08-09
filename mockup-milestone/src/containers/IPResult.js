@@ -46,7 +46,7 @@ export default function IPResult(){
                 <p>Probabilitas anda terinfeksi COVID: {userProb}</p>
                 <p>Keterangan:</p>
                 <p>Infectious Rate: {data.infRate}</p>
-                <p>Faktor pengali internal: {userInfRate}</p>
+                <p>Faktor pengali internal: {userInfRate/data.infRate}</p>
                 <p>Probabilitas 1 orang acak di provinsi anda terinfeksi: {probProv}</p>
                 <p>Prediksi banyaknya pengidap COVID yang anda temui per hari: {Math.pow(exValueMeetPerDay*predMeetPerDay, 0.5)}</p>
             </div>

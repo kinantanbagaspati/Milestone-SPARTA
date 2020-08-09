@@ -62,43 +62,42 @@ export default class InfectedProbability extends Component{
                             <input type="radio" id="disease0" name="disease" value={0} onChange={this.handleInputChange}/>
                             <label for="disease0"> Tidak ada </label>
                         </form>
-
                     </div>
                     <div className="external">
                         <label for="cars">Di provinsi mana anda tinggal?</label>
                         <select id="cars" name="provinsi" onChange={this.handleInputChange}>
                             <option value="0">INDONESIA (bila provinsi pilihan tidak ada)</option>
                             <option value="1">ACEH</option>
-							<option value="2">SUMATERA UTARA</option>
-							<option value="3">SUMATERA BARAT</option>
-							<option value="4">R I A U</option>
-							<option value="5">J A M B I</option>
-							<option value="6">SUMATERA SELATAN</option>
-							<option value="8">LAMPUNG</option>
-							<option value="9">KEPULAUAN BANGKA BELITUNG</option>
-							<option value="10">KEPULAUAN RIAU</option>
-							<option value="11">DKI JAKARTA</option>
-							<option value="12">JAWA BARAT</option>
-							<option value="13">JAWA TENGAH</option>
-							<option value="14">DI YOGYAKARTA</option>
-							<option value="15">JAWA TIMUR</option>
-							<option value="16">B A N T E N</option>
-							<option value="17">BALI</option>
-							<option value="18">NUSA TENGGARA BARAT</option>
-							<option value="20">KALIMANTAN BARAT</option>
-							<option value="21">KALIMANTAN TENGAH</option>
-							<option value="22">KALIMANTAN SELATAN</option>
-							<option value="23">KALIMANTAN TIMUR</option>
-							<option value="24">SULAWESI UTARA</option>
-							<option value="25">SULAWESI SELATAN</option>
-							<option value="26">SULAWESI TENGGARA</option>
-							<option value="28">SULAWESI BARAT</option>
-							<option value="29">MALUKU</option>
-							<option value="30">MALUKU UTARA</option>
-							<option value="31">PAPUA</option>
-							<option value="32">PAPUA BARAT</option>
-							<option value="33">SULAWESI TENGAH</option>
-							<option value="34">KALIMANTAN UTARA</option>
+                            <option value="2">SUMATERA UTARA</option>
+                            <option value="3">SUMATERA BARAT</option>
+                            <option value="4">R I A U</option>
+                            <option value="5">J A M B I</option>
+                            <option value="6">SUMATERA SELATAN</option>
+                            <option value="8">LAMPUNG</option>
+                            <option value="9">KEPULAUAN BANGKA BELITUNG</option>
+                            <option value="10">KEPULAUAN RIAU</option>
+                            <option value="11">DKI JAKARTA</option>
+                            <option value="12">JAWA BARAT</option>
+                            <option value="13">JAWA TENGAH</option>
+                            <option value="14">DI YOGYAKARTA</option>
+                            <option value="15">JAWA TIMUR</option>
+                            <option value="16">B A N T E N</option>
+                            <option value="17">BALI</option>
+                            <option value="18">NUSA TENGGARA BARAT</option>
+                            <option value="20">KALIMANTAN BARAT</option>
+                            <option value="21">KALIMANTAN TENGAH</option>
+                            <option value="22">KALIMANTAN SELATAN</option>
+                            <option value="23">KALIMANTAN TIMUR</option>
+                            <option value="24">SULAWESI UTARA</option>
+                            <option value="25">SULAWESI SELATAN</option>
+                            <option value="26">SULAWESI TENGGARA</option>
+                            <option value="28">SULAWESI BARAT</option>
+                            <option value="29">MALUKU</option>
+                            <option value="30">MALUKU UTARA</option>
+                            <option value="31">PAPUA</option>
+                            <option value="32">PAPUA BARAT</option>
+                            <option value="33">SULAWESI TENGAH</option>
+                            <option value="34">KALIMANTAN UTARA</option>
                         </select>
                         <p>Berapa hari dalam seminggu pekerjaan anda mengharuskan keluar rumah?</p>
                         <input type="number" name="workDay" onChange={this.handleInputChange}/>
@@ -113,6 +112,7 @@ export default class InfectedProbability extends Component{
                         <p>Selain yang telah ditanyakan, berapa banyak orang yang anda temui per harinya?</p>
                         <input type="number" name="userElse" onChange={this.handleInputChange}/>
                     </div>
+                    
                 </div>
                 <div>
                     <Link to={{pathname: "/infected-probability/result", userProb: this.state}}>
@@ -122,6 +122,7 @@ export default class InfectedProbability extends Component{
                     </Link>
                 </div>
             </div>
+            
         );
     }
 }

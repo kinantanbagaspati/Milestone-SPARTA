@@ -36,15 +36,18 @@
     height: 30px;
     background-color: #47B713;
     border-radius: 5px;
+
+	
 }
 
-
-
 #skala {
-    width: 1000px;
+    width: 500px;
     height: 350px;
     padding-top: 10px;
     border: black solid;
 	text-align: left;
     list-style-position: inside;
+	float:right;
+
 }
+

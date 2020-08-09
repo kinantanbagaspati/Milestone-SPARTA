@@ -1,9 +1,10 @@
 .Container {
+	align-content: center;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	height: 750px;
+	height: 100%;
     background: #E5E5E5;
 }
 
@@ -19,6 +20,7 @@
 .headerhome {
 	font-family: Roboto, Arial;
 	font-style: normal;
+	align-items: center;
 	font-weight: normal;
 	font-size: 40px;
 	line-height: 56px;
@@ -26,6 +28,7 @@
 }
 
 .kotakputihhome {
+	align-self: center;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
@@ -34,7 +37,7 @@
 	height: 400px;
 	background: #FFFFFF;
 	border-radius: 50px;
-	margin: 50px;
+	margin-top: 50px;
 }
 
 .pertanyaanhome {
@@ -43,6 +46,7 @@
 	font-weight: normal;
 	font-size: 25px;
 	margin-top: -20px;
+	align-items: center;
 	margin-bottom: -50px;
 
 }
@@ -53,15 +57,33 @@
 	justify-content: space-around;
 	width: 200px;
 	height: 200px;
+	align-items: center;
 }
 .buttonHome{
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 	background-color: #47B713;
 	border-radius: 20px;
+	align-items: center;
 }
 .tulisan{
 	color: white;
 }
 .buttonHome:hover{
+	align-items: center;
 	background-color:#006400;
 }
+
+.hero-image {
+	align-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	height: 100%;
+	background-image: url("Background.jpg");
+	height: 600px; 
+	width: 1380px;
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+  }
