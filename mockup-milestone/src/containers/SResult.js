@@ -28,7 +28,7 @@ export default function SResult(){
         }
         ProbDay[i] = ProbDay[i]/data.symptom.weight[10];
     }
-
+    
     return (
         <div className="Container">
             <h1>Hasil Kecocokan Anda dengan Gejala</h1>
