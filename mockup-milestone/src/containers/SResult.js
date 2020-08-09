@@ -26,18 +26,23 @@ export default function SResult(){
         for(var j=0; j<10; j++){
             ProbDay[i] = ProbDay[i] + data.symptom.weight[j]*TP[j][i];
         }
-        ProbDay[i] = ProbDay[i]/data.symptom.weight[10];
+        ProbDay[i] = Math.round(ProbDay[i]/data.symptom.weight[10]*100);
     }
 
     return (
         <div className="Container">
             <h1>Hasil Kecocokan Anda dengan Gejala</h1>
             <div>
-                Tingkat kecocokan terhadap orang yang sudah 1 hari terinfeksi: {ProbDay[0]}
-                Tingkat kecocokan terhadap orang yang sudah 5 hari terinfeksi: {ProbDay[1]}
-                Tingkat kecocokan terhadap orang yang sudah 7 hari terinfeksi: {ProbDay[2]}
-                Tingkat kecocokan terhadap orang yang sudah 8 hari terinfeksi: {ProbDay[3]}
-                Tingkat kecocokan terhadap orang yang sudah 10 hari terinfeksi: {ProbDay[4]}
+                Tingkat kecocokan terhadap orang yang sudah 1 hari terinfeksi: {ProbDay[0]} %
+				<br/>
+                Tingkat kecocokan terhadap orang yang sudah 5 hari terinfeksi: {ProbDay[1]} %
+				<br/>
+                Tingkat kecocokan terhadap orang yang sudah 7 hari terinfeksi: {ProbDay[2]} %
+				<br/>
+                Tingkat kecocokan terhadap orang yang sudah 8 hari terinfeksi: {ProbDay[3]} %
+				<br/>
+                Tingkat kecocokan terhadap orang yang sudah 10 hari terinfeksi: {ProbDay[4]} %
+				<br/>
             </div>
             <div>
                 <Link to="/">
