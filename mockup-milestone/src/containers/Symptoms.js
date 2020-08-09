@@ -102,10 +102,10 @@ export default class Symptoms extends Component{
 						<h1>Symptoms</h1>
 					</div>
 					<div>
-						<h2>Diantara 10 gejala di bawah ini, pilih skala dari 0-4 sesuai gejala yang Anda rasakan</h2>
+						<h2 className="tulisanPutih">Diantara 10 gejala di bawah ini, pilih skala dari 0-4 sesuai gejala yang Anda rasakan</h2>
 						<div className="skala">
 							<p>&ensp; &ensp;Skala Gejala. Keterangan</p>
-							<ol start="1">
+							<ol start="0">
 								<li>Organ terkait gejala tersebut berfungsi normal sepenuhnya</li>
 								<br/>
 								<li>Terasa gangguan terhadap organ terkait gejala dalam
