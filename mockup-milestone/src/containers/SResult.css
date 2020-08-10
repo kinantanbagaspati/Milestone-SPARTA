@@ -1,9 +1,9 @@
-.Container {
+/*.Container {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
-}
+}*/
 .centerize {
     position: absolute;
     top: 25%;
@@ -11,23 +11,27 @@
     margin-right: -50%;
     transform: translate(-50%, -50%) 
 }
-
+/*
 .hero-image5 {
     display: flex;
     flex-direction: column;
 }
-
+*/
 .heading {
     color:white;
 }
 
+.heading2 {
+    color: white;
+}
+
 .box {
     position: absolute;
-    top: 90%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%,-50%);
     width: 550px;
-    height: 300px;
+    height: 200px;
     border-left: 1px solid #4CAF50;
     border-bottom: 1px solid #4CAF50;
     display: flex;
@@ -66,10 +70,10 @@
     text-align: center;
 }
 
-.button {
+.buttonSresult {
     position: absolute;
     left: 44%;
-    bottom: -24%;
+    bottom: 0%;
     background-color: #4CAF50; /* Green */
     border: none;
     color: white;
