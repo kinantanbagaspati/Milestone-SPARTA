@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Tugas-Sparta-2019/static/css/main.dcf21365.chunk.css",
-    "main.js": "/Tugas-Sparta-2019/static/js/main.6cd23c44.chunk.js",
-    "main.js.map": "/Tugas-Sparta-2019/static/js/main.6cd23c44.chunk.js.map",
-    "runtime-main.js": "/Tugas-Sparta-2019/static/js/runtime-main.9fe99115.js",
-    "runtime-main.js.map": "/Tugas-Sparta-2019/static/js/runtime-main.9fe99115.js.map",
-    "static/js/2.f723fee7.chunk.js": "/Tugas-Sparta-2019/static/js/2.f723fee7.chunk.js",
-    "static/js/2.f723fee7.chunk.js.map": "/Tugas-Sparta-2019/static/js/2.f723fee7.chunk.js.map",
-    "index.html": "/Tugas-Sparta-2019/index.html",
-    "precache-manifest.62311ccd96e828ea7ce7a22e58ffe2e5.js": "/Tugas-Sparta-2019/precache-manifest.62311ccd96e828ea7ce7a22e58ffe2e5.js",
-    "service-worker.js": "/Tugas-Sparta-2019/service-worker.js",
-    "static/css/main.dcf21365.chunk.css.map": "/Tugas-Sparta-2019/static/css/main.dcf21365.chunk.css.map",
-    "static/js/2.f723fee7.chunk.js.LICENSE.txt": "/Tugas-Sparta-2019/static/js/2.f723fee7.chunk.js.LICENSE.txt",
-    "static/media/Algorithm.css": "/Tugas-Sparta-2019/static/media/COVID.5c7998e3.jpg"
+    "main.css": "/kadeksuryam/Tugas-Sparta-Covid.git/static/css/main.61e04c42.chunk.css",
+    "main.js": "/kadeksuryam/Tugas-Sparta-Covid.git/static/js/main.fc021546.chunk.js",
+    "main.js.map": "/kadeksuryam/Tugas-Sparta-Covid.git/static/js/main.fc021546.chunk.js.map",
+    "runtime-main.js": "/kadeksuryam/Tugas-Sparta-Covid.git/static/js/runtime-main.d736961d.js",
+    "runtime-main.js.map": "/kadeksuryam/Tugas-Sparta-Covid.git/static/js/runtime-main.d736961d.js.map",
+    "static/js/2.f723fee7.chunk.js": "/kadeksuryam/Tugas-Sparta-Covid.git/static/js/2.f723fee7.chunk.js",
+    "static/js/2.f723fee7.chunk.js.map": "/kadeksuryam/Tugas-Sparta-Covid.git/static/js/2.f723fee7.chunk.js.map",
+    "index.html": "/kadeksuryam/Tugas-Sparta-Covid.git/index.html",
+    "precache-manifest.9377c85a114f04cb2f34be3a257045ef.js": "/kadeksuryam/Tugas-Sparta-Covid.git/precache-manifest.9377c85a114f04cb2f34be3a257045ef.js",
+    "service-worker.js": "/kadeksuryam/Tugas-Sparta-Covid.git/service-worker.js",
+    "static/css/main.61e04c42.chunk.css.map": "/kadeksuryam/Tugas-Sparta-Covid.git/static/css/main.61e04c42.chunk.css.map",
+    "static/js/2.f723fee7.chunk.js.LICENSE.txt": "/kadeksuryam/Tugas-Sparta-Covid.git/static/js/2.f723fee7.chunk.js.LICENSE.txt",
+    "static/media/Algorithm.css": "/kadeksuryam/Tugas-Sparta-Covid.git/static/media/COVID.5c7998e3.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.9fe99115.js",
+    "static/js/runtime-main.d736961d.js",
     "static/js/2.f723fee7.chunk.js",
-    "static/css/main.dcf21365.chunk.css",
-    "static/js/main.6cd23c44.chunk.js"
+    "static/css/main.61e04c42.chunk.css",
+    "static/js/main.fc021546.chunk.js"
   ]
 }
