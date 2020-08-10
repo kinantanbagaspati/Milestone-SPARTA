@@ -14,8 +14,8 @@ export default function IPResult(){
     let userBMI = location.userProb.weight*10000/(location.userProb.height*location.userProb.height);
     userInfRate *= (1 + 0.012*(userBMI - 23.55)*(userBMI - 23.55));
 
-    let infProv = data.external.provinsi.case[0]*(1 + data.infRate * 25 * 9);
-    let probProv = infProv/(data.external.provinsi.population[0]*1000000);
+    let infProv = data.external.provinsi.case[location.userProb.provinsi]*(1 + data.infRate * 25 * 9);
+    let probProv = infProv/(data.external.provinsi.population[location.userProb.provinsi]*1000000);
     let exValueMeetPerDay = (2*(location.userProb.workDay)*(location.userProb.workMeet) + 25*(location.userProb.pubDay))/14 + 1*(location.userProb.userElse);
     exValueMeetPerDay *= probProv;
     exValueMeetPerDay += (location.userProb.posMeet/14);
@@ -46,12 +46,12 @@ export default function IPResult(){
                 <h1>Hasil Probabilitas Anda Terinfeksi</h1>
                 </div>
                 <div className="kotakputihhome">
-                    <p>Probabilitas anda terinfeksi COVID: {Math.round(userProb*100)}%</p>
+                    <h3>Probabilitas anda terinfeksi COVID: {userProb*100}%</h3>
                     <p>Keterangan:</p>
                     <p>Infectious Rate: {data.infRate}</p>
                     <p>Faktor pengali internal: {userInfRate/data.infRate}</p>
-                    <p>Probabilitas 1 orang acak di provinsi anda terinfeksi: {Math.round(probProv*100)}%</p>
-                    <p>Prediksi banyaknya pengidap COVID yang anda temui per hari: {Math.round(Math.pow(exValueMeetPerDay*predMeetPerDay, 0.5))} pengidap</p>
+                    <p>Probabilitas 1 orang acak di provinsi anda terinfeksi: {probProv*100}%</p>
+                    <p>Prediksi banyaknya pengidap COVID yang anda temui per hari: {Math.pow(exValueMeetPerDay*predMeetPerDay, 0.5)} pengidap</p>
                 </div>
                 <div>
                     <Link to="/">

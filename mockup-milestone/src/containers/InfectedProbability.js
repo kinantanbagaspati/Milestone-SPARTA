@@ -69,14 +69,14 @@ export default class InfectedProbability extends Component{
                     </div>
                     <div className="external">
                         <p></p>
-                        <label for="cars">Di provinsi mana anda tinggal?</label>
-                        <select id="cars" name="provinsi" onChange={this.handleInputChange}>
+                        <label for="provinsi">Di provinsi mana anda tinggal?</label>
+                        <select id="provinsi" name="provinsi" onChange={this.handleInputChange}>
                             <option value="0">INDONESIA (bila provinsi pilihan tidak ada)</option>
                             <option value="1">ACEH</option>
                             <option value="2">SUMATERA UTARA</option>
                             <option value="3">SUMATERA BARAT</option>
-                            <option value="4">R I A U</option>
-                            <option value="5">J A M B I</option>
+                            <option value="4">RIAU</option>
+                            <option value="5">JAMBI</option>
                             <option value="6">SUMATERA SELATAN</option>
                             <option value="8">LAMPUNG</option>
                             <option value="9">KEPULAUAN BANGKA BELITUNG</option>
@@ -86,7 +86,7 @@ export default class InfectedProbability extends Component{
                             <option value="13">JAWA TENGAH</option>
                             <option value="14">DI YOGYAKARTA</option>
                             <option value="15">JAWA TIMUR</option>
-                            <option value="16">B A N T E N</option>
+                            <option value="16">BANTEN</option>
                             <option value="17">BALI</option>
                             <option value="18">NUSA TENGGARA BARAT</option>
                             <option value="20">KALIMANTAN BARAT</option>
