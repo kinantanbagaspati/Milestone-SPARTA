@@ -4,7 +4,7 @@
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	height: 100vh;
+	height: 30000px;
     background: #E5E5E5;
 }
 
@@ -16,6 +16,15 @@
 	width: 100%;
 	background: #47B713;
 }
+.konten {
+    height: 30000px;
+    width: 1200px;
+    background-image: url("COVID.jpg");
+    background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+	
+  }
 
 .hero-image {
 	align-content: center;
@@ -23,11 +32,10 @@
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	height: 100vh;
+	height: 30000px;
 	background-image: url("Background.jpg");
 	width: 100vw;
 	background-position: center; /* Center the image */
-	background-repeat: no-repeat; /* Do not repeat the image */
 	background-size: cover; /* Resize the background image to cover the entire container */
   }
 

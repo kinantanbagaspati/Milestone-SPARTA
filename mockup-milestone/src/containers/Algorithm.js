@@ -17,6 +17,9 @@ export default class Algorithm extends Component{
                     <div className="header">
                         <h1>Algoritma COVID-19</h1>
                     </div>
+                    <div className="konten">
+
+                    </div>
                 </div>
             </div>
         );
