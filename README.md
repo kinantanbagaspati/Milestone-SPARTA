@@ -1,8 +1,8 @@
-# Milestone-SPARTA
+Judul Solusi : Website Pemantau Kemungkinan Terinfeksi Covid-19
 
 Kelompok 26, Semua IF.
 Anggota Kelompok :
-1. Kevin Ryan(16519294), IPResult;Background setiap page
+1. Kevin Ryan(16519294), IPResult;Background setiap page;styling
 2. Rehagana Kevin Christian Sembiring(16519380), SResult
 3. Kinantan Arya Bagaspati(16519393), Infected Probability; Symptoms
 4. Hokki Suwanda(16519408), IPResult; Symptoms
@@ -14,11 +14,7 @@ Anggota Kelompok :
 10. Stefanus(16519475), Infected Probability; Symptoms
 
 Solusi ini adalah solusi berbentuk web.
-
-Pertama download dan install terlebih dahulu node.js melalui https://nodejs.org/en/download/
-
-Buka Command Prompt kemudian ketikkan "npm install react", "npm install react-dom", "npm install react-scripts" untuk menginstall dependencies yang dibutuhkan untuk menjalankan webnya
-
-Pull atau clone git ini, kemudian buka local repository dari Command Prompt hingga mencapai folder /containers
-
-Pada Command Prompt, masukkan "npm start" dan jalankan webnya
+--------------------------------------------------------------------------------------------
+Pertama install terlebih dahulu node.js melalui https://nodejs.org/en/download/
+Bukalah folder mockup-milestone pada command prompt dan lakukan command "npm install". Untuk
+menjalankannya, ketik "npm start" setelah npm selesai diinstall
