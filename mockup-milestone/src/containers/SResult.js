@@ -28,38 +28,82 @@ export default function SResult(){
         }
         ProbDay[i] = Math.round(ProbDay[i]/data.symptom.weight[10]*100);
     }
-    
 
-    let weight = [];
+    let Day = [1, 5, 7, 8, 10];
+    let userDay = 0;
+    let totalProb = 0;
+    for(var i=0; i<5; i++){
+        userDay += (ProbDay[i]*Day[i]);
+        totalProb += ProbDay[i];
+    }
+    userDay /= totalProb;
+    totalProb /= 5;
+    
     return (
-        <div class = "centerize">
-            <div className="hero-image5">
-                <div className="heading">
-                    <h1>Hasil Kecocokan Anda dengan Gejala</h1>
+        <div class = "container">
+            <div className="header">
+                <h1>Hasil Kecocokan Anda dengan Gejala</h1>
+            </div>
+            <div className="heading2">
+                Tingkat kecocokan terhadap orang yang sudah 1 hari terinfeksi: {ProbDay[0]} %
+	    		<br/>
+                Tingkat kecocokan terhadap orang yang sudah 5 hari terinfeksi: {ProbDay[1]} %
+	    		<br/>
+                Tingkat kecocokan terhadap orang yang sudah 7 hari terinfeksi: {ProbDay[2]} %
+	            <br/>
+                Tingkat kecocokan terhadap orang yang sudah 8 hari terinfeksi: {ProbDay[3]} %
+                <br/>
+                Tingkat kecocokan terhadap orang yang sudah 10 hari terinfeksi: {ProbDay[4]} %
+			    <br/>
+            </div>
+            <div className="box">
+                <div className="komponendiagram">
+                    <div className="heading2">{ProbDay[0]} %</div>
+                    <div style={{width: 20, height: 2*ProbDay[0], backgroundColor: "#47B713"}}/>
+                    <div style={{height: 20}}>
+                        <div className="heading2">hari 1</div>
+                    </div>
                 </div>
-                <div className="heading">
-                    Tingkat kecocokan terhadap orang yang sudah 1 hari terinfeksi: {ProbDay[0]} %
-		    		<br/>
-                    Tingkat kecocokan terhadap orang yang sudah 5 hari terinfeksi: {ProbDay[1]} %
-		    		<br/>
-                    Tingkat kecocokan terhadap orang yang sudah 7 hari terinfeksi: {ProbDay[2]} %
-		            <br/>
-                    Tingkat kecocokan terhadap orang yang sudah 8 hari terinfeksi: {ProbDay[3]} %
-                    <br/>
-                    Tingkat kecocokan terhadap orang yang sudah 10 hari terinfeksi: {ProbDay[4]} %
-				    <br/>
+                <div className="komponendiagram">
+                    <div className="heading2">{ProbDay[1]} %</div>
+                    <div style={{width: 20, height: 2*ProbDay[1], backgroundColor: "#47B713"}}/>
+                    <div style={{height: 20}}>
+                        <div className="heading2">hari 5</div>
+                    </div>
                 </div>
-                <div className="box">
-                    
+                <div className="komponendiagram">
+                    <div className="heading2">{ProbDay[2]} %</div>
+                    <div style={{width: 20, height: 2*ProbDay[2], backgroundColor: "#47B713"}}/>
+                    <div style={{height: 20}}>
+                        <div className="heading2">hari 7</div>
+                    </div>
                 </div>
-                <p></p>
-                <div>
-                    <Link to="/">
-                        <button class = "button">
-                            Kembali ke home
-                        </button>
-                    </Link>
+                <div className="komponendiagram">
+                    <div className="heading2">{ProbDay[3]} %</div>
+                    <div style={{width: 20, height: 2*ProbDay[3], backgroundColor: "#47B713"}}/>
+                    <div style={{height: 20}}>
+                        <div className="heading2">hari 8</div>
+                    </div>
                 </div>
+                <div className="komponendiagram">
+                    <div className="heading2">{ProbDay[4]} %</div>
+                    <div style={{width: 20, height: 2*ProbDay[4], backgroundColor: "#47B713"}}/>
+                    <div style={{height: 20}}>
+                        <div className="heading2">hari 10</div>
+                    </div>
+                </div>
+            </div>
+            <div className="heading2">
+                Prediksi hari paling cocok dengan user: {userDay}
+	    		<br/>
+                Tingkat akurasi: {totalProb} %
+            </div>
+            <div>
+                <Link to="/">
+                    <Button className="buttonHome" block bsSize="large">
+                        <p className="tulisan">Kembali ke Home</p>
+                    </Button>
+                </Link>
             </div>
         </div>
     );

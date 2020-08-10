@@ -26,7 +26,7 @@ export default function Routes() {
             <Route exact path="/symptoms/result">
                 <SResult />
             </Route>
-            <Route exact path="/algorithm">
+            <Route exact path="/Algorithm">
                 <Algorithm />
             </Route>
         </Switch>

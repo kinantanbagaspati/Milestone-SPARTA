@@ -1,16 +1,21 @@
 .container {
    display: flex;
    flex-direction: column;
-   text-align: center;
-   height: 100%;
-   background: #E5E5E5;
+   align-items: center;
+   background-image: url("Background.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 1200px;
+   width : 100vw;
 }
+
 
 .headerSym{
    display: flex;
    align-items: center;
    justify-content: center;
-   height: 100px;
+   height: 80px;
    width: 100%;
    background: #47B713;
    font-family: Roboto, Arial;

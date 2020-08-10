@@ -97,7 +97,6 @@ export default class Symptoms extends Component{
         return (
 		
             <div className="container">
-				<div className="hero-image4">
 					<div className="headerSym">
 						<h1>Symptoms</h1>
 					</div>
@@ -290,13 +289,8 @@ export default class Symptoms extends Component{
 							<p className="tulisanTombol">Hasil</p>
 						</Button>
 					</Link>
-					<Link to={{pathname: "/", userSymp: this.state}}>
-						<Button className="buttonHasil" block bsSize="small">
-							<p className="tulisanTombol">Kembali ke Home</p>
-						</Button>
-					</Link>
 				</div>
-            </div>
+            
 		</div>
         );
     }

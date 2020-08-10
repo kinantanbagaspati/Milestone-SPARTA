@@ -1,3 +1,14 @@
+.Containeripresult {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-image: url("Background.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 100vh;
+}
+
 .homeButton{
    display: flex;
    flex-direction: column;
