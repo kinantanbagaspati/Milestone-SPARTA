@@ -1,16 +1,17 @@
 .Container {
-	align-content: center;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	text-align: center;
-	height: 100%;
-    background: #E5E5E5;
+    background-image: url("Background.jpg");
+	background-position: center; 
+	background-repeat: no-repeat; 
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
 }
 
 .header {
 	display: flex;
-	align-items: center;
 	justify-content: center;
 	height: 100px;
 	width: 100%;
@@ -75,18 +76,18 @@
 }
 
 .hero-image {
-	align-content: center;
+/*	align-content: center;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	height: 100%;
-	background-image: url("Background.jpg");
-	height: 650px; 
-	width: 1380px;
-	background-position: center; /* Center the image */
-	background-repeat: no-repeat; /* Do not repeat the image */
-	background-size: cover; /* Resize the background image to cover the entire container */
+	height: 100%;*/
+/*	background-image: url("Background.jpg");
+	height: 100%; 
+	width: 100%;
+	background-position: center; 
+	background-repeat: no-repeat; 
+	background-size: cover; */
   }
 
   .hero-image1 {
