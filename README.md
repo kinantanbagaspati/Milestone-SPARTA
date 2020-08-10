@@ -1,8 +1,9 @@
 # Probabilitas terkena COVID-19
 
+Judul Solusi : Pemantau Kemungkinan Terinfeksi Covid-19
 Kelompok 26, Semua IF.
 Anggota Kelompok :
-1. Kevin Ryan(16519294), IPResult;Background setiap page
+1. Kevin Ryan(16519294), IPResult;Background setiap page;styling
 2. Rehagana Kevin Christian Sembiring(16519380), SResult
 3. Kinantan Arya Bagaspati(16519393), Infected Probability; Symptoms
 4. Hokki Suwanda(16519408), IPResult; Symptoms
@@ -14,11 +15,10 @@ Anggota Kelompok :
 10. Stefanus(16519475), Infected Probability; data.json
 
 Solusi ini adalah solusi berbentuk web.
-
-Pertama download dan install terlebih dahulu node.js melalui https://nodejs.org/en/download/
-
-Buka Command Prompt kemudian ketikkan "npm install react", "npm install react-dom", "npm install react-scripts" untuk menginstall dependencies yang dibutuhkan untuk menjalankan webnya
-
-Pull atau clone git ini, kemudian buka local repository dari Command Prompt hingga mencapai folder /containers
-
-Pada Command Prompt, masukkan "npm start" dan jalankan webnya
+---------------------------------------------------------------------------------------------
+How to run :
+1. Download dan install terlebih dahulu node.js melalui https://nodejs.org/en/download/
+2. Buka Command Prompt kemudian ketikkan "npm install react", "npm install react-dom", "npm install react-scripts"
+   untuk menginstall dependencies yang dibutuhkan untuk menjalankan webnya
+3. Pull atau clone git ini, kemudian buka local repository dari Command Prompt hingga mencapai folder /containers
+4. Pada Command Prompt, masukkan "npm start" dan jalankan webnya
