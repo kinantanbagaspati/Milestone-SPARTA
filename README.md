@@ -12,7 +12,9 @@ Anggota Kelompok :
 10. Stefanus(16519475), Infected Probability; Symptoms
 
 Solusi ini adalah solusi berbentuk web.
-Pertama install terlebih dahulu node.js melalui <insert link here>
+Pertama install terlebih dahulu node.js melalui https://nodejs.org/en/download/
+
+
 # Milestone-SPARTA
 Habis di pull, install dependenciesnya ya biar bisa jalan. Jangan lupa install npm.
 Klo ga salah, yang harus diinstall: react, react-dom, and react-scripts.
