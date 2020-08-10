@@ -1,3 +1,5 @@
+# Milestone-SPARTA
+
 Kelompok 26, Semua IF.
 Anggota Kelompok :
 1. Kevin Ryan(16519294), IPResult;Background setiap page
@@ -20,8 +22,3 @@ Buka Command Prompt kemudian ketikkan "npm install react", "npm install react-do
 Pull atau clone git ini, kemudian buka local repository dari Command Prompt hingga mencapai folder /containers
 
 Pada Command Prompt, masukkan "npm start" dan jalankan webnya
-
-# Milestone-SPARTA
-Habis di pull, install dependenciesnya ya biar bisa jalan. Jangan lupa install npm.
-Klo ga salah, yang harus diinstall: react, react-dom, and react-scripts.
-Habis itu di terminal, silahkan masuk ke file mockup-milestone nya terus run command: npm start
