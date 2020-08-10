@@ -11,7 +11,7 @@ Anggota Kelompok :
 7. Kadek Surya Mahardika(16519444), Symptoms; Fix error
 8. Randy Zakya Suchradi(16519461), Homepage; Symptoms
 9. M. Alfandavi Aryo Utomo(16519471), Homepage
-10. Stefanus(16519475), Infected Probability; Symptoms
+10. Stefanus(16519475), Infected Probability; data.json
 
 Solusi ini adalah solusi berbentuk web.
 
