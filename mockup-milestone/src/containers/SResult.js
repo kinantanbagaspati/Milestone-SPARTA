@@ -37,26 +37,58 @@ export default function SResult(){
                 <div className="heading">
                     <h1>Hasil Kecocokan Anda dengan Gejala</h1>
                 </div>
-            <div className="heading">
-                Tingkat kecocokan terhadap orang yang sudah 1 hari terinfeksi: {ProbDay[0]} %
-				<br/>
-                Tingkat kecocokan terhadap orang yang sudah 5 hari terinfeksi: {ProbDay[1]} %
-				<br/>
-                Tingkat kecocokan terhadap orang yang sudah 7 hari terinfeksi: {ProbDay[2]} %
-				<br/>
-                Tingkat kecocokan terhadap orang yang sudah 8 hari terinfeksi: {ProbDay[3]} %
-				<br/>
-                Tingkat kecocokan terhadap orang yang sudah 10 hari terinfeksi: {ProbDay[4]} %
-				<br/>
-            </div>
-            <p></p>
-            <div>
-                <Link to="/">
-                    <button class = "button">
-                        Kembali ke home
-                    </button>
-                </Link>
-            </div>
+                <div className="heading">
+                    Tingkat kecocokan terhadap orang yang sudah 1 hari terinfeksi: {ProbDay[0]} %
+		    		<br/>
+                    Tingkat kecocokan terhadap orang yang sudah 5 hari terinfeksi: {ProbDay[1]} %
+		    		<br/>
+                    Tingkat kecocokan terhadap orang yang sudah 7 hari terinfeksi: {ProbDay[2]} %
+		            <br/>
+                    Tingkat kecocokan terhadap orang yang sudah 8 hari terinfeksi: {ProbDay[3]} %
+                    <br/>
+                    Tingkat kecocokan terhadap orang yang sudah 10 hari terinfeksi: {ProbDay[4]} %
+				    <br/>
+                </div>
+                <div className="box">
+                    <div className="day">
+                        <div className="graph">
+                            <div className="percentage">{ProbDay[0]}%</div>
+                        </div>
+                        <div className="dayNumber">1</div>
+                    </div>
+                    <div className="day">
+                        <div className="graph">
+                            <div className="percentage">{ProbDay[1]}%</div>
+                        </div>
+                        <div className="dayNumber">5</div>
+                    </div>
+                    <div className="day">
+                        <div className="graph">
+                            <div className="percentage">{ProbDay[2]}%</div>
+                        </div>
+                        <div className="dayNumber">7</div>
+                    </div>
+                    <div className="day">
+                        <div className="graph">
+                            <div className="percentage">{ProbDay[3]}%</div>
+                        </div>
+                        <div className="dayNumber">8</div>
+                    </div>
+                    <div className="day">
+                        <div className="graph">
+                            <div className="percentage">{ProbDay[4]}%</div>
+                        </div>
+                        <div className="dayNumber">10</div>
+                    </div>
+                </div>
+                <p></p>
+                <div>
+                    <Link to="/">
+                        <button class = "button">
+                            Kembali ke home
+                        </button>
+                    </Link>
+                </div>
             </div>
         </div>
     );
