@@ -97,7 +97,6 @@ export default class Symptoms extends Component{
         return (
 		
             <div className="container">
-				<div className="hero-image4">
 					<div className="headerSym">
 						<h1>Symptoms</h1>
 					</div>
@@ -297,7 +296,6 @@ export default class Symptoms extends Component{
 					</Link>
 				</div>
             </div>
-		</div>
         );
     }
 }

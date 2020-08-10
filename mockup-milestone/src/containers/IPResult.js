@@ -41,7 +41,6 @@ export default function IPResult(){
 
     return (
         <div className="Container">
-            <div className="hero-image2">
                 <div className="header">
                 <h1>Hasil Probabilitas Anda Terinfeksi</h1>
                 </div>
@@ -71,6 +70,5 @@ export default function IPResult(){
                     </Link>
                 </div>
             </div>
-        </div>
     );
 }
