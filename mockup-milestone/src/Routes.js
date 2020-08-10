@@ -5,6 +5,7 @@ import InfectedProbability from "./containers/InfectedProbability";
 import Symptoms from "./containers/Symptoms";
 import IPResult from "./containers/IPResult";
 import SResult from "./containers/SResult";
+import Algorithm from "./containers/Algorithm";
 
 
 export default function Routes() {
@@ -24,6 +25,9 @@ export default function Routes() {
             </Route>
             <Route exact path="/symptoms/result">
                 <SResult />
+            </Route>
+            <Route exact path="/algorithm">
+                <Algorithm />
             </Route>
         </Switch>
     );

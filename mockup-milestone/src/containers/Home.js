@@ -31,6 +31,13 @@ export default class Home extends Component{
                                     </Button>
                                 </Link>
                             </div>
+                            <div>
+                                <Link to="/algorithm">
+                                    <Button className="buttonHome" block bsSize="large">
+                                    <p className="tulisan">Algoritma yang dipakai di web ini mengenai COVID-19</p>
+                                    </Button>
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </div>

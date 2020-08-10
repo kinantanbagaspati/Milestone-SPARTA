@@ -50,36 +50,7 @@ export default function SResult(){
 				    <br/>
                 </div>
                 <div className="box">
-                    <div className="day">
-                        <div className="graph">
-                            <div className="percentage">{ProbDay[0]}%</div>
-                        </div>
-                        <div className="dayNumber">1</div>
-                    </div>
-                    <div className="day">
-                        <div className="graph">
-                            <div className="percentage">{ProbDay[1]}%</div>
-                        </div>
-                        <div className="dayNumber">5</div>
-                    </div>
-                    <div className="day">
-                        <div className="graph">
-                            <div className="percentage">{ProbDay[2]}%</div>
-                        </div>
-                        <div className="dayNumber">7</div>
-                    </div>
-                    <div className="day">
-                        <div className="graph">
-                            <div className="percentage">{ProbDay[3]}%</div>
-                        </div>
-                        <div className="dayNumber">8</div>
-                    </div>
-                    <div className="day">
-                        <div className="graph">
-                            <div className="percentage">{ProbDay[4]}%</div>
-                        </div>
-                        <div className="dayNumber">10</div>
-                    </div>
+                    
                 </div>
                 <p></p>
                 <div>
