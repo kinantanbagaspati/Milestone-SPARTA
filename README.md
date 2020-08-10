@@ -12,8 +12,14 @@ Anggota Kelompok :
 10. Stefanus(16519475), Infected Probability; Symptoms
 
 Solusi ini adalah solusi berbentuk web.
-Pertama install terlebih dahulu node.js melalui https://nodejs.org/en/download/
 
+Pertama download dan install terlebih dahulu node.js melalui https://nodejs.org/en/download/
+
+Buka Command Prompt kemudian ketikkan "npm install react", "npm install react-dom", "npm install react-scripts" untuk menginstall dependencies yang dibutuhkan untuk menjalankan webnya
+
+Pull atau clone git ini, kemudian buka local repository dari Command Prompt hingga mencapai folder /containers
+
+Pada Command Prompt, masukkan "npm start" dan jalankan webnya
 
 # Milestone-SPARTA
 Habis di pull, install dependenciesnya ya biar bisa jalan. Jangan lupa install npm.
