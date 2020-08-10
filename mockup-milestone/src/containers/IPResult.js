@@ -48,10 +48,20 @@ export default function IPResult(){
                 <div className="kotakputihhome">
                     <h3>Probabilitas anda terinfeksi COVID: {userProb*100}%</h3>
                     <p>Keterangan:</p>
-                    <p>Infectious Rate: {data.infRate}</p>
-                    <p>Faktor pengali internal: {userInfRate/data.infRate}</p>
-                    <p>Probabilitas 1 orang acak di provinsi anda terinfeksi: {probProv*100}%</p>
-                    <p>Prediksi banyaknya pengidap COVID yang anda temui per hari: {Math.pow(exValueMeetPerDay*predMeetPerDay, 0.5)} pengidap</p>
+                    <div className="keterangan">
+                        <div className="subketerangan">
+                            <p style={{fontSize:14}}>Infectious Rate</p>
+                            <p style={{fontSize:14}}>Faktor pengali internal</p>
+                            <p style={{fontSize:14}}>Probabilitas 1 orang acak di provinsi anda terinfeksi</p>
+                            <p style={{fontSize:14}}>Prediksi banyaknya pengidap COVID yang anda temui per hari</p>
+                        </div>
+                        <div className="subketerangan">
+                            <p style={{fontSize:14}}>: {data.infRate}</p>
+                            <p style={{fontSize:14}}>: {userInfRate/data.infRate}</p>
+                            <p style={{fontSize:14}}>: {probProv*100}%</p>
+                            <p style={{fontSize:14}}>: {Math.pow(exValueMeetPerDay*predMeetPerDay, 0.5)} pengidap</p>
+                        </div>
+                    </div>
                 </div>
                 <div>
                     <Link to="/">

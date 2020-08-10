@@ -19,3 +19,11 @@
    text-align:center;
    margin:auto;
 }
+.keterangan{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   width: 600px;
+   height: 200px;
+   background-color:white;
+}
