@@ -1,0 +1,40 @@
+.Containeripresult {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-image: url("Background.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 100vh;
+}
+
+.homeButton{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   width: 150px;
+   height: 50px;
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+   background-color: #47B713;
+   border-radius: 20px;
+}
+
+.homeButton:hover{
+   background-color:#006400;
+}
+
+.tulisanTombol{
+   color:white;
+   font-size: 20px;
+   text-align:center;
+   margin:auto;
+}
+.keterangan{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   width: 600px;
+   height: 200px;
+   background-color:white;
+}

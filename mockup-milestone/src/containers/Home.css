@@ -1,0 +1,170 @@
+.Container {
+	align-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	height: 100%;
+	background: #E5E5E5;
+	
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100px;
+	width: 100%;
+	background: #47B713;
+}
+
+.headerhome {
+	font-family: Roboto, Arial;
+	font-style: normal;
+	align-items: center;
+	font-weight: normal;
+	font-size: 45px;
+	line-height: 56px;
+	background: #47B713;
+	color: white;
+}
+
+.kotakputihhome {
+	align-self: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 800px;
+	height: 400px;
+	background: #FFFFFF;
+	border-radius: 50px;
+	margin-top: 50px;
+}
+
+.pertanyaanhome {
+	font-family: Roboto, Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	margin-top: -20px;
+	align-items: center;
+	margin-bottom: -50px;
+
+}
+
+.kumpulantombolhome {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 200px;
+	height: 200px;
+	align-items: center;
+}
+.buttonHome{
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	background-color: #47B713;
+	border-radius: 20px;
+	align-items: center;
+}
+.tulisan{
+	color: white;
+}
+.buttonHome:hover{
+	align-items: center;
+	background-color:#006400;
+}
+
+.hero-image {
+	align-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	height: 100%;
+	background-image: url("Background.jpg");
+	height: 650px; 
+	width: 1380px;
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+  }
+
+  .hero-image1 {
+	align-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	height: 100%;
+	background-image: url("Background.jpg");
+	height: 1000px; 
+	width: 1380px;
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+  }
+
+  .hero-image2 {
+	align-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	height: 100%;
+	background-image: url("Background.jpg");
+	height: 650px; 
+	width: 1380px;
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+  }
+
+  .hero-image3 {
+	align-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	height: 100%;
+	background-image: url("Background.jpg");
+	height: 1200px; 
+	width: 1380px;
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+  }
+
+  .hero-image4 {
+	align-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	background-image: url("Background.jpg");
+	height: 100vh; 
+	width: 1380px;
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+	margin-top:0px;
+	padding-top:0px;
+}
+
+.hero-image5 {
+	align-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	height: 100%;
+	background-image: url("Background.jpg");
+	height: 500px; 
+	width: 1380px;
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+	margin-top:0px;
+	padding-top:300px;
+	padding-bottom:00px;
+}
