@@ -1,0 +1,103 @@
+.containerip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("Background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.judul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.factor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1200px;
+    height: 750px;
+    margin-top: 50px;
+}
+.factortitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #64FB1D;
+    border: black solid;
+    margin-top: -50px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.internal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 350px;
+    height: 450px;
+    border: black solid;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: white;
+    border-radius: 50px;
+    text-align: justify;
+}
+.external {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 700px;
+    height: 450px;
+    border: black solid;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: white;
+    border-radius: 50px;
+}
+.subexternal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 700px;
+    text-align: justify;
+}
+.question{
+    width: 400px;
+}
+.externalinput{
+    width: 275px;
+}
+
+.resultButton{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   width: 150px;
+   height: 50px;
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+   background-color: #47B713;
+   border-radius: 20px;
+}
+
+.resultButton:hover{
+   background-color:#006400;
+}
+
+.tulisanTombol{
+   color:white;
+   font-size: 20px;
+   text-align:center;
+   margin:auto;
+}

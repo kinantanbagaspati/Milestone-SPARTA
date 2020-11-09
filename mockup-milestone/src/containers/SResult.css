@@ -1,0 +1,88 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.hero-image5 {
+    display: flex;
+    flex-direction: column;
+}
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100px;
+	width: 100vw;
+	background: #47B713;
+}
+
+.heading2 {
+    color: white;
+}
+
+.box {
+    border-left: 1px solid #4CAF50;
+    border-bottom: 1px solid #4CAF50;
+    display: flex;
+    width: 500px;
+    height: 200px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.komponendiagram {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -20px;
+}
+
+.buttonHome{
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	background-color: #47B713;
+	border-radius: 20px;
+	align-items: center;
+}
+.tulisan{
+	color: white;
+}
+.buttonHome:hover{
+	align-items: center;
+	background-color:#006400;
+}
+
+
+.percentage {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: lawngreen;
+}
+
+.dayNumber {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.buttonSresult {
+    position: absolute;
+    left: 44%;
+    bottom: 0%;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
